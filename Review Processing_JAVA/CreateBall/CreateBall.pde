@@ -2,8 +2,8 @@
 float ballStartPositionX; // displayWidth
 float ballStartPositionY; // displayHeight
 float ballSize ; // displayWidth
-int ballMoveX; //Declare
-int ballMoveY; //Declare
+int ballMoveX; // Declaration
+int ballMoveY; // Declaration
 
 void setup() {
   size (700, 500); // fullScreen(); Cannot Teach with fullScreen()
