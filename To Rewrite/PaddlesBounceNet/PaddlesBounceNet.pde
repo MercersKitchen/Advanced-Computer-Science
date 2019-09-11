@@ -54,8 +54,8 @@ void draw () {
   //println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
   println ("Ball X:", ballMoveX, "Y Move:", ballMoveY);
   println ("Paddle:", paddleMoveYleft, paddleMoveYleft+paddleHeight);
-  if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
-    speedX = speedX * -1;
+  if (  ballMoveX <= paddleMoveXleft || ballMoveX >= paddleMoveXright+paddleWidth ) {
+    noLoop(); // End the Game
   }
   if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
     speedY = speedY * -1;
