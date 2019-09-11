@@ -11,6 +11,13 @@ Concepts and Vocabulary Summary
 
 
 Progression
+- Boilerplate
+- Create the ball
+- Bounce off walls
+  - Remove ball shadow 
+- Create Paddles and move them
+- Bounce off paddles
+- Create Nets and Record Score
 
 ---
 
