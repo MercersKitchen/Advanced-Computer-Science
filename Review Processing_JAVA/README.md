@@ -13,11 +13,11 @@ Concepts and Vocabulary Summary
 Progression
 - Boilerplate for Pong & Starting Processing-Java
   - Trivia Notes about Processing-Java, <a href="">see below</a>
-- Create the ball
-- Bounce off walls
+- createBall.pde, see folder
+- bounceBall.pde, see folder
   - Remove ball shadow
-- Create Paddles and move them
-- Bounce off paddles
+- Create Paddles and move them, see folder
+  - Bounce off paddles
 - Create Nets and Record Score
 
 ---
@@ -64,3 +64,10 @@ Trivial Knowledge: program creates a cross-stich pattern
 Laying, get rid of the shadow
 
 ---
+
+Code to add
+- create sections and code to add when coding specific ideas
+- might help with ignoring some code and doing other things
+- another idea is to create tabs to section blocks of in a linear way
+
+```
