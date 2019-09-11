@@ -18,7 +18,8 @@ Progression
   - Remove ball shadow
 - Create Paddles and move them, see folder
   - Bounce off paddles
-- Create Nets and Record Score
+  - Make Game stop when ball in the net
+- Record a goal to the console
 
 ---
 
