@@ -11,13 +11,29 @@ Concepts and Vocabulary Summary
 
 
 Progression
-- Boilerplate
+- Boilerplate for Pong & Starting Processing-Java
+  - Trivia Notes about Processing-Java, <a href="">see below</a>
 - Create the ball
 - Bounce off walls
-  - Remove ball shadow 
+  - Remove ball shadow
 - Create Paddles and move them
 - Bounce off paddles
 - Create Nets and Record Score
+
+---
+
+# Trivia Notes about Processing-Java
+
+Processing-Java uses the Java Compiler
+
+Requirements
+- Processing-Java file must be within Folder, named the same
+- .pde extension adds a few requirements to the Processing-Java Execution
+
+Other Notes
+- ByteCode automatically created
+- Main Processing-Java Program is the Constructor (in Object Orientated Programming)
+- Java Compiler is run with specific main line "void main string args ()"
 
 ---
 
