@@ -1,0 +1,11 @@
+POSSIBLE SOLUTIONS (Needs to be coded)
+- Adjusting the Canvas Width and Height (using defined width and height variables instead of keywords)
+
+Simpler Solution in P_Pong.pde
+- Print Errors to console, quit game automatically
+- Compare canvas to full screen values, quit if canvas too big
+- Compare canvas width and height to establish "square-ness"
+
+Original Notes, Possible Solution
+- Change the incrementation of the ball so it does not bounce in a square
+- Seems like an odd solution, against physics of regular formed ball
