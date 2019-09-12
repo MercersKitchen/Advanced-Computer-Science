@@ -19,6 +19,11 @@ Progression
 - Create Paddles and move them, see folder
   - Bounce off paddles
   - Make Game stop when ball in the net
+  - paddles.pde
+  - paddlesBounceTest.pde
+  - paddlesBounce.pde
+  - paddlesBounceNet.pde
+  - paddlesBounceNetGoalConsole.pde 
 - Record a goal to the console
 
 ---
