@@ -44,21 +44,37 @@ void setup() {
 void draw () {
   // Arithmetic  First, then visual data
 
-  // Move the Ball
+  //Drawing the Background for optical illusion simulating animation of game
   noStroke();
   fill(lightMode2);
   rect(0, 0, width, height); // Background
   fill(0);
   stroke(1);
-
-  if (  ballMoveX <= paddleMoveXleft || ballMoveX >= paddleMoveXright+paddleWidth ) {
+  
+  // Value Testing and Arithmetic to Position Ball
+  if ( ballMoveX <= paddleMoveXleft || ballMoveX >= paddleMoveXright+paddleWidth ) {
     noLoop(); // End the Game
   }
   if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
     speedY = speedY * -1;
   }
+  
+  // Bounce off Paddles, order of arithemtic important
+  if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYleft && ballMoveY <= paddleMoveYleft+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+  if (ballMoveX >= paddleMoveXright-ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYright && ballMoveY <= paddleMoveYright+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+
+  // Move the Ball, using Value Testing and Arithmetic
   ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
   ballMoveY += speedY; //What is the difference in these lines
+  
   //Order is important here
   //Right Paddle
   if (paddleRightUp == true ) {
@@ -86,19 +102,8 @@ void draw () {
   if (paddleMoveYleft >= height-paddleHeight ) {
     paddleMoveYleft = height-paddleHeight;
   }
-
-  // Bounce off Paddles, order of arithemtic important
-  if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
-    if (ballMoveY >= paddleMoveYleft && ballMoveY <= paddleMoveYleft+paddleHeight) {
-      speedX = speedX * -1;
-    }
-  }
-  if (ballMoveX >= paddleMoveXright-ballSize/2) { // Bounce or Goal
-    if (ballMoveY >= paddleMoveYright && ballMoveY <= paddleMoveYright+paddleHeight) {
-      speedX = speedX * -1;
-    }
-  }
-
+  
+  // Drawing the Canvas Objects
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);

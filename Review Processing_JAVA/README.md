@@ -32,6 +32,11 @@ Progression
   - PaddlesBounce.pde, see folder or <a href="">see below for added code</a>
   - PaddlesBounceNet.pde, see folder or <a href="">see below for added code</a>
   - PaddlesBounceNetGoalConsole.pde, see folder or <a href="">see below for added code</a>
+- PaddlesBounceNetGoalConsole.pde, Record a goal to the console, see folder or <a href="">see below for added code</a>
+
+Future Ideas
+- Review Procedural Design, writing a driver program with supporting files
+
 - Record a goal to the console
 
 ---
@@ -292,11 +297,11 @@ void setup() {
 void draw() {
   // Arithmetic  First, then visual data
   // Drawing the Background for optical illusion simulating animation of game
-  //Value Testing and Arithmetic to Position Ball
+  // Value Testing and Arithmetic to Position Ball
   // Move the Ball, using Value Testing and Arithmetic
-  //Order is important here
-  //Right Paddle
-  //Left Paddle
+  // Order is important here
+  // Right Paddle
+  // Left Paddle
 
   // Bounce off Paddles, order of arithmetic important
   if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
@@ -322,10 +327,50 @@ void keyPressed () {
 
 ---
 
+# PaddlesBounceNet.pde: Defining the NET with noLoop()
+
+Note: order of additional lines of code are important
+- Remember: execution occurs one line at a time, in order
+
+```JAVA
+  //Global Variables
+```
+
+```JAVA
+void setup() {
+}
+```
+
+```JAVA
+void draw() {
+  // Arithmetic  First, then visual data
+  // Drawing the Background for optical illusion simulating animation of game
+
+  // Value Testing and Arithmetic to Position Ball
+  if ( ballMoveX <= paddleMoveXleft || ballMoveX >= paddleMoveXright+paddleWidth ) {
+    noLoop(); // End the Game
+  }
+
+  // Bounce off Paddles, order of arithmetic important
+  // Move the Ball, using Value Testing and Arithmetic
+  // Order is important here
+  // Right Paddle
+  // Left Paddle
+  // Drawing the Canvas Objects
+}
+```
+
+```JAVA
+void keyPressed () {
+}
+```
+
 ---
 
-- PaddlesBounceNet.pde, see folder or <a href="">see below for added code</a>
+---
+
 - PaddlesBounceNetGoalConsole.pde, see folder or <a href="">see below for added code</a>
+- - PaddlesBounceNetGoalConsole.pde, Record a goal to the console, see folder or <a href="">see below for added code</a>
 
 ---
 
