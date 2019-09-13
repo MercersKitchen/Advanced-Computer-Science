@@ -150,7 +150,7 @@ void draw() {
   }
 
   // Move the Ball, using Value Testing and Arithmetic
-  // Drawing the Ball on Canvas
+  // Drawing the Canvas Objects
 }
 
 ```
@@ -198,17 +198,75 @@ void setup() {
 
 ```JAVA
 void draw() {
+  // Arithmetic  First, then visual data
+  //Drawing the Background for optical illusion simulating animation of game
+  noStroke();
+  fill(lightMode2);
+  rect(0, 0, width, height); // Background
+  fill(0); //Reset Values to default, easing parameter flow
+  stroke(1); //Reset Values to default, easing parameter flow
 
   //Value Testing and Arithmetic to Position Ball
-  if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
-    speedX = speedX * -1;
-  }
-  if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
-    speedY = speedY * -1;
-  }
 
   // Move the Ball, using Value Testing and Arithmetic
-  // Drawing the Ball on Canvas
+
+  //Order is important here
+  //Right Paddle
+  if (paddleRightUp == true ) {
+    paddleMoveYright -= 1;
+  }
+  if (paddleRightDown == true) {
+    paddleMoveYright += 1;
+  }
+  if (paddleMoveYright <= 0 ) {
+    paddleMoveYright = 0;
+  }
+  if (paddleMoveYright >= height-paddleHeight ) {
+    paddleMoveYright = height-paddleHeight;
+  }
+  //Left Paddle
+  if (paddleLeftUp == true ) {
+    paddleMoveYleft -= 1;
+  }
+  if (paddleLeftDown == true) {
+    paddleMoveYleft += 1;
+  }
+  if (paddleMoveYleft <= 0 ) {
+    paddleMoveYleft = 0;
+  }
+  if (paddleMoveYleft >= height-paddleHeight ) {
+    paddleMoveYleft = height-paddleHeight;
+  }
+
+  // Drawing the Canvas Objects
+  noStroke();
+  fill(lightMode1);
+  rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
+  rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
+  fill(0); //Reset Values to default, easing parameter flow
+  stroke(1); //Reset Values to default, easing parameter flow
+}
+
+```
+
+```JAVA
+void keyPressed () {
+  if (key == CODED && keyCode == UP) {
+    paddleRightUp = true; //Codes continuous action
+    paddleRightDown = false; //Only one action at a time
+  }
+  if (key == CODED && keyCode == DOWN) {
+    paddleRightDown = true;
+    paddleRightUp = false;
+  }
+  if (key == CODED && key == 'W' || key == 'w') {
+    paddleLeftUp = true;
+    paddleLeftDown = false;
+  }
+  if (key == CODED && key == 'S' || key == 's') {
+    paddleLeftDown = true;
+    paddleLeftUp = false;
+  }
 }
 
 ```
