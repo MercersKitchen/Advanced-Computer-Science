@@ -164,6 +164,7 @@ Note: order of additional lines of code are important
 
 CAUTION: PaddlesBounceTest.pde simplifies Paddle-Bounce Problem to solve issue of X-Axis Coordinates
 <a href="">see folder above</a>
+- PaddlesBounceTest.pde, <a href="">see folder above</a>
 
 ```JAVA
   //Global Variables
@@ -272,10 +273,60 @@ void keyPressed () {
 ```
 
 ---
-- PaddlesBounceTest.pde, <a href="">see folder above</a>
-- PaddlesBounce.pde, see folder or <a href="">see below for added code</a>
+
+# PaddlesBounce.pde: Adding Code to Bounce off the Paddles
+
+Note: order of additional lines of code are important
+- Remember: execution occurs one line at a time, in order
+
+```JAVA
+  //Global Variables
+```
+
+```JAVA
+void setup() {
+}
+```
+
+```JAVA
+void draw() {
+  // Arithmetic  First, then visual data
+  // Drawing the Background for optical illusion simulating animation of game
+  //Value Testing and Arithmetic to Position Ball
+  // Move the Ball, using Value Testing and Arithmetic
+  //Order is important here
+  //Right Paddle
+  //Left Paddle
+
+  // Bounce off Paddles, order of arithmetic important
+  if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYleft && ballMoveY <= paddleMoveYleft+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+  if (ballMoveX >= paddleMoveXright-ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYright && ballMoveY <= paddleMoveYright+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+
+  // Drawing the Canvas Objects
+}
+
+```
+
+```JAVA
+void keyPressed () {
+}
+```
+
+---
+
+---
+
 - PaddlesBounceNet.pde, see folder or <a href="">see below for added code</a>
 - PaddlesBounceNetGoalConsole.pde, see folder or <a href="">see below for added code</a>
+
 ---
 
 # To Include

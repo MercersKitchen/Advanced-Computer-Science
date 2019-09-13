@@ -44,21 +44,25 @@ void setup() {
 void draw () {
   // Arithmetic  First, then visual data
 
-  // Move the Ball
+  // Drawing the Background for optical illusion simulating animation of game
   noStroke();
   fill(lightMode2);
   rect(0, 0, width, height); // Background
-  fill(0);
-  stroke(1);
-
-  if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
+  fill(0); //Reset Values to default, easing parameter flow
+  stroke(1); //Reset Values to default, easing parameter flow
+  
+  //Value Testing and Arithmetic to Position Ball
+  if ( ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
     speedX = speedX * -1;
   }
   if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
     speedY = speedY * -1;
   }
+  
+  // Move the Ball, using Value Testing and Arithmetic
   ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
   ballMoveY += speedY; //What is the difference in these lines
+  
   //Order is important here
   //Right Paddle
   if (paddleRightUp == true ) {
@@ -87,7 +91,7 @@ void draw () {
     paddleMoveYleft = height-paddleHeight;
   }
 
-  // Bounce off Paddles, order of arithemtic important
+  // Bounce off Paddles, order of arithmetic important
   if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
     if (ballMoveY >= paddleMoveYleft && ballMoveY <= paddleMoveYleft+paddleHeight) {
       speedX = speedX * -1;
@@ -99,7 +103,7 @@ void draw () {
     }
   }
 
-  // Movedwsww Position
+  // Drawing the Canvas Objects
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
