@@ -20,7 +20,7 @@ void setup() {
 }
 
 void draw () {
-  // Move the Ball
+  //Value Testing and Arithmetic to Position Ball
   println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
   println ("X Move:", ballMoveX, "Y Move:", ballMoveY);
   if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
@@ -29,11 +29,13 @@ void draw () {
   if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
     speedY = speedY * -1;
   }
+  // Move the Ball, using Value Testing and Arithmetic
   ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
   ballMoveY += speedY; //What is the difference in these lines
   println ("X Move:", ballMoveX);
   println ("Y Move :", ballMoveY);
-  // Moved Position
+  
+  // Drawing the Canvas Objects
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
   //Image retains shawdows and ball doesn't bounce
 } 

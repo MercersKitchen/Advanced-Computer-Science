@@ -3,6 +3,7 @@ Mercer's Kitchen Outline and Progressions, Hyperlinks to Projects and Exercises
 
 Progressions
 - Reviewing Processing, <a href="">see folder above</a>
+
 ---
 
 # To Include

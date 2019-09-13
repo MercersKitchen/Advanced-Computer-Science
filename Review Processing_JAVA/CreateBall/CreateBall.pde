@@ -25,7 +25,7 @@ void draw () {
   ballMoveY -= 1; //What is the difference in these lines
   println ("X Move:", ballMoveX);
   println ("Y Move :", ballMoveY);
-  // Moved Position
+  // Drawing the Canvas Objects
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
-  //Image retains shawdows and ball doesn't bounce
+  //Image retains shadows and ball doesn't bounce
 } 
