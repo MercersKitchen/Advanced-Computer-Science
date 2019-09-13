@@ -2,10 +2,10 @@
 From Structured to Procedural
 
 Concepts and Vocabulary Summary
-- Case Study: GUI & End-user, experienced features, expectations
-- Chart for GUI Ratios and factions of objects in GUI (ball, paddle x 2, scoreboard x 2)
+- Pong Case Study: GUI & End-user, experienced features, expectations, <a href="">see below</a>
+  - Chart for GUI Ratios and factions of objects in GUI (ball, paddle x 2, scoreboard x 2)
   - Object || X | Y | width | height
-- Basic boilerplate for Processing (Global Variables, SETUP(), and DRAW())- Math: to change adding to subtracting, multiply by -1
+- Basic boilerplate for Processing, <a href="">see below</a>
   - Review code for fullScreen()
 - Using console to view arithmetic and where objects are
 
@@ -23,7 +23,7 @@ Progression
   - paddlesBounceTest.pde
   - paddlesBounce.pde
   - paddlesBounceNet.pde
-  - paddlesBounceNetGoalConsole.pde 
+  - paddlesBounceNetGoalConsole.pde
 - Record a goal to the console
 
 ---
@@ -40,6 +40,28 @@ Other Notes
 - ByteCode automatically created
 - Main Processing-Java Program is the Constructor (in Object Orientated Programming)
 - Java Compiler is run with specific main line "void main string args ()"
+
+---
+
+# Pong Case Study
+
+Mandatory GUI Objects
+- Ball
+- Left and Right Paddles
+- Score Board
+- Space for Buttons
+
+Mandatory Features
+- GUI Button Control
+- Dark-Light Mode Switch
+- Reset Game Button
+- Quit Program Button
+
+Advanced Features Idea List
+- "Evening out play when score is not close"
+  - Making ball faster
+  - Slowing paddle speed
+- Creating AI for Single Player Play
 
 ---
 
