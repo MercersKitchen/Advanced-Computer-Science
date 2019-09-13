@@ -51,9 +51,6 @@ void draw () {
   fill(0);
   stroke(1);
 
-  println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
-  println ("X Move:", ballMoveX, "Y Move:", ballMoveY);
-  println ("Paddle Left Right Move:", paddleMoveYleft, paddleMoveYright);
   if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
     speedX = speedX * -1;
   }
@@ -87,22 +84,16 @@ void draw () {
   if (paddleMoveYleft >= height-paddleHeight ) {
     paddleMoveYleft = height-paddleHeight;
   }
-
   ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
   ballMoveY += speedY; //What is the difference in these lines
-  println ("X Move:", ballMoveX);
-  println ("Y Move :", ballMoveY);
   // Moved Position
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
   rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
   rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
-  //Image retains shawdows and ball doesn't bounce
   fill(0);
   stroke(1);
-  //Reset all variables
-  
 } 
 
 void keyPressed () {

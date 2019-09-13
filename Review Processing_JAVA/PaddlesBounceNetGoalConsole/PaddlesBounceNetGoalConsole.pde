@@ -22,7 +22,6 @@ Boolean paddleLeftDown = false;
 int score1 = 0;
 int score2 = 0;
 
-
 void setup() {
   size (700, 500); // fullScreen(); Cannot Teach with fullScreen()
   ballStartPositionX = width*1/2; // displayWidth
@@ -54,8 +53,6 @@ void draw () {
   fill(0);
   stroke(1);
 
-  //println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
-  
   if ( ballMoveX <= paddleMoveXleft ) {
     noLoop(); // End the Game
     score2 = 1;
@@ -69,7 +66,9 @@ void draw () {
   }
   ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
   ballMoveY += speedY; //What is the difference in these lines
+  
   //Order is important here
+  
   //Right Paddle
   if (paddleRightUp == true ) {
     paddleMoveYright -= 1;
@@ -109,13 +108,11 @@ void draw () {
     }
   }
 
-  // Movedwsww Position
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
   rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
   rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
-  //Image retains shawdows and ball doesn't bounce
   fill(0);
   stroke(1);
 

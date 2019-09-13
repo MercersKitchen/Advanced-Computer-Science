@@ -95,7 +95,6 @@ void draw () {
     speedX = speedX * -1;
   }
 
-  // Movedwsww Position
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);

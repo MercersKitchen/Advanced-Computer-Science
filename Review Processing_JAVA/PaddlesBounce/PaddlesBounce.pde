@@ -51,9 +51,6 @@ void draw () {
   fill(0);
   stroke(1);
 
-  //println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
-  println ("Ball X:", ballMoveX, "Y Move:", ballMoveY);
-  println ("Paddle:", paddleMoveYleft, paddleMoveYleft+paddleHeight);
   if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
     speedX = speedX * -1;
   }
@@ -108,7 +105,6 @@ void draw () {
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
   rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
   rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
-  //Image retains shawdows and ball doesn't bounce
   fill(0);
   stroke(1);
 } 

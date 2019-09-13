@@ -51,9 +51,6 @@ void draw () {
   fill(0);
   stroke(1);
 
-  //println ("X Start:", ballStartPositionX, "Y Start:", ballStartPositionY);
-  println ("Ball X:", ballMoveX, "Y Move:", ballMoveY);
-  println ("Paddle:", paddleMoveYleft, paddleMoveYleft+paddleHeight);
   if (  ballMoveX <= paddleMoveXleft || ballMoveX >= paddleMoveXright+paddleWidth ) {
     noLoop(); // End the Game
   }
@@ -102,13 +99,11 @@ void draw () {
     }
   }
 
-  // Movedwsww Position
   noStroke();
   fill(lightMode1); 
   ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
   rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
   rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
-  //Image retains shawdows and ball doesn't bounce
   fill(0);
   stroke(1);
 } 
