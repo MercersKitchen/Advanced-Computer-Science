@@ -1,0 +1,129 @@
+//Global Variables
+float ballStartPositionX; // displayWidth
+float ballStartPositionY; // displayHeight
+float ballSize ; // displayWidth
+int ballMoveX; //Declare
+int ballMoveY; //Declare
+int speedX = 1; // Follows rules of physics
+int speedY = 1; // Follows rules of physics
+int lightMode1; // Populated with a Button
+int lightMode2; //Populated with a Button
+float paddleStartY; 
+float paddleMoveYleft;
+float paddleMoveYright;
+float paddleWidth;
+float paddleHeight;
+float paddleMoveXleft;
+float paddleMoveXright;
+Boolean paddleRightUp = false;
+Boolean paddleRightDown = false;
+Boolean paddleLeftUp = false;
+Boolean paddleLeftDown = false;
+int score1 = 0;
+int score2 = 0;
+
+void setup() {
+  size (700, 500); // fullScreen(); Cannot Teach with fullScreen()
+  setupVariables(); // Geometry Configuration
+  
+  // Create a Ball, start position 
+  ellipse (ballStartPositionX, ballStartPositionY, ballSize, ballSize);
+}
+
+void draw () {
+  // Arithmetic  First, then visual data
+
+  // Move the Ball
+  noStroke();
+  fill(lightMode2);
+  rect(0, 0, width, height); // Background
+  fill(0);
+  stroke(1);
+
+  if ( ballMoveX <= paddleMoveXleft ) {
+    noLoop(); // End the Game
+    score2 = 1;
+  }
+  if ( ballMoveX >= paddleMoveXright+paddleWidth ) {
+    noLoop(); // End the Game
+    score1 = 1;
+  }
+  if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
+    speedY = speedY * -1;
+  }
+  ballMoveX += speedX; // Progression of ballMoveX=ballMoveX+1 to ballMoveX=+1 to ... 
+  ballMoveY += speedY; //What is the difference in these lines
+  
+  //Order is important here
+  
+  //Right Paddle
+  if (paddleRightUp == true ) {
+    paddleMoveYright -= 1;
+  }
+  if (paddleRightDown == true) {
+    paddleMoveYright += 1;
+  }
+  if (paddleMoveYright <= 0 ) {
+    paddleMoveYright = 0;
+  }
+  if (paddleMoveYright >= height-paddleHeight ) {
+    paddleMoveYright = height-paddleHeight;
+  }
+  //Left Paddle
+  if (paddleLeftUp == true ) {
+    paddleMoveYleft -= 1;
+  }
+  if (paddleLeftDown == true) {
+    paddleMoveYleft += 1;
+  }
+  if (paddleMoveYleft <= 0 ) {
+    paddleMoveYleft = 0;
+  }
+  if (paddleMoveYleft >= height-paddleHeight ) {
+    paddleMoveYleft = height-paddleHeight;
+  }
+
+  // Bounce off Paddles, order of arithemtic important
+  if (ballMoveX <= paddleMoveXleft+paddleWidth+ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYleft && ballMoveY <= paddleMoveYleft+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+  if (ballMoveX >= paddleMoveXright-ballSize/2) { // Bounce or Goal
+    if (ballMoveY >= paddleMoveYright && ballMoveY <= paddleMoveYright+paddleHeight) {
+      speedX = speedX * -1;
+    }
+  }
+
+  noStroke();
+  fill(lightMode1); 
+  ellipse (ballMoveX, ballMoveY, ballSize, ballSize);
+  rect(paddleMoveXleft, paddleMoveYleft, paddleWidth, paddleHeight); // Paddle #1
+  rect(paddleMoveXright, paddleMoveYright, paddleWidth, paddleHeight); // Paddle #2
+  fill(0);
+  stroke(1);
+
+  //Print Score, only in Draw()
+  //After noLoop(), rest of draw() will execute
+  println ("Player 1", score1);
+  println ("Player 2", score2);
+} 
+
+void keyPressed () {
+  if (key == CODED && keyCode == UP) {
+    paddleRightUp = true; //Codes continuous action
+    paddleRightDown = false; //Only one action at a time
+  }
+  if (key == CODED && keyCode == DOWN) {
+    paddleRightDown = true; //Codes continuous action
+    paddleRightUp = false;
+  }
+  if (key == CODED && key == 'W' || key == 'w') {
+    paddleLeftUp = true; //Codes continuous action
+    paddleLeftDown = false;
+  }
+  if (key == CODED && key == 'S' || key == 's') {
+    paddleLeftDown = true; //Codes continuous action
+    paddleLeftUp = false;
+  }
+}
