@@ -8,7 +8,7 @@ Table of Contents (in order of difficulty)
 2. Creating a Quit Button and adding text "Quit"
    - Includes button design
 3. Adding Images
-   - Note: this lesson can be repeated mutliple times
+   - Note: this lesson can be repeated multiple times
    - For example: on a snowy day, when everyone is late, start teaching this and reteach it when everyone is present and on time
 4. Making other buttons
 

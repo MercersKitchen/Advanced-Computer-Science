@@ -39,6 +39,11 @@ Future Ideas
 - Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
 - Creating a Splash Screen with instructions
 - Adding Text to a Screen
+  - Review all functions needed to print text to canvas in processing (language is for visual data, text data has difficulties; "tool must match problem to be solved")
+  - See Text_Flat.pde
+  - Note: changing the number based on educated guesses is something a computer should be able to do
+  - Unique Flowchart for putting text in a rect()
+  -
 - Record a goal to the console
 
 - Random Ball Start
