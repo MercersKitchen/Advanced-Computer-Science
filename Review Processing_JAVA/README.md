@@ -36,8 +36,17 @@ Progression
 
 Future Ideas
 - Review Procedural Design, writing a driver program with supporting files
-
+- Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
+- Creating a Splash Screen with instructions
+- Adding Text to a Screen
 - Record a goal to the console
+
+- Random Ball Start
+- Faster Ball, Guards
+- Shrinking Paddle
+- Easter Egg of catching ball
+- Rally Counter influencing score
+- Other features of older pong games
 
 ---
 
