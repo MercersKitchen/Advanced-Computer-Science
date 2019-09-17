@@ -18,7 +18,7 @@ textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 //Values: LEFT | CENTER | RIGHT & TOP | CENTER | BOTTOM | BASELINE
 textFont(titleFont, titleFontSize); //Change the number until it fits, largest font size
 float i = 1;
-while (textWidth(title) > titleWidth) {
+while (textWidth(title) > titleWidth) { //textFont() needs to be set for textWidth() to work
   titleFontSize = titleFontSize * i;
   textSize (titleFontSize);
   i = i - 0.0001;
