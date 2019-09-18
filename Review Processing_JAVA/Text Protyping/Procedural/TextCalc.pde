@@ -45,12 +45,10 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
 
 //Exemplar RETURN with Parameters
 float textCalculator(float size, String string, float rectWidth) {
-  float i = 1;
   textSize(size); //For textWidth Sizing
   while (textWidth(string) > rectWidth) {
-    size = size * i;
+    size = size * 0.99;
     textSize (size);
-    i = i - 0.0001;
   }
   return size; //Purpose of Calculator
 }

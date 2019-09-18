@@ -19,9 +19,9 @@ textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 textFont(titleFont, titleFontSize); //Change the number until it fits, largest font size
 float i = 1;
 while (textWidth(title) > titleWidth) { //textFont() needs to be set for textWidth() to work
-  titleFontSize = titleFontSize * i;
+  titleFontSize = titleFontSize * 0.99; //Mutliply by 99%, creates decreasing number
   textSize (titleFontSize);
-  i = i - 0.0001;
+  //i = i - 0.0001;
   println ("i:", i, "Title Font Size:", titleFontSize); //75.8, 74.6, 50 is where it prints
 }
 if (titleFontString == "Harrington") {

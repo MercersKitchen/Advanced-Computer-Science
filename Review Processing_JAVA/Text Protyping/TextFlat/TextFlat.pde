@@ -1,3 +1,5 @@
+//Minimum code
+
 //fullScreen(); //Student Only
 size(700,500); //Teacher Only
 String title = "Wahoop!";
