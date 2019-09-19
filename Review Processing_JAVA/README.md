@@ -33,19 +33,21 @@ Progression
   - PaddlesBounceNet.pde, see folder or <a href="">see below for added code</a>
   - PaddlesBounceNetGoalConsole.pde, see folder or <a href="">see below for added code</a>
 - PaddlesBounceNetGoalConsole.pde, Record a goal to the console, see folder or <a href="">see below for added code</a>
-
-Future Ideas
 - Review Procedural Design, writing a driver program with supporting files
-- Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
-- Creating a Splash Screen with instructions
-- Adding Text to a Screen
+- Protypting Text to Procedural Text Autoformatting
   - Review all functions needed to print text to canvas in processing (language is for visual data, text data has difficulties; "tool must match problem to be solved")
-  - See Text_Flat.pde
+  See Text_Flat.pde
   - Note: changing the number based on educated guesses is something a computer should be able to do
   - Unique Flowchart for putting text in a rect()
-  -
-- Record a goal to the console
+- Including Text in Pong Procedural Game
+  - Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
+-
 
+Future Ideas
+- Creating a Splash Screen with instructions
+- Adding Text to a Screen
+- Scoreboard
+- Record a goal to the console
 - Random Ball Start
 - Faster Ball, Guards
 - Shrinking Paddle
