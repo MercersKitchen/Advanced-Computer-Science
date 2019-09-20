@@ -1,10 +1,24 @@
 //Global Variables
 Boolean start = false;
 
-void setup() {}
+void setup() {
+  //fullScreen(); //Student Only
+  size(700, 500); //Teacher Only
+  textSetup();
+  GUI_Setup();
+  
+}
 
-void draw() {}
+void draw() {
+  if (start == true) {
+  }
+}
 
-void keyPressed() {}
+void keyPressed() {
+  if (key == 'q' || key == 'Q') {
+    exit();
+  }
+}
 
-void mousePressed() {}
+void mousePressed() {
+}
