@@ -9,12 +9,12 @@ String footer;
 float footerY;
 
 void textSetup() {
-  title= "Top45678901234567890122";
+  title= "Click this screen to Activate";
   titleFont = createFont ("Harrington", height); // //Must also Tools / Create Font / Find Font / Do Not Press "OK"
   titleWidth = width*1/2;
   titleHeight = height*1/10;
 
-  footer = "Bottom";
+  footer = "Press the Space Bar to Exit Console";
   footerY = (height*9/10)-1;
 
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
@@ -29,11 +29,10 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
 
   //Reference to Text Calculator
   println( string.length() );
-  if (string.length() >= 14) { //Number changes depending on geometry ratio (width/height) and font
+  if (string.length() >= 13) { //Number changes depending on geometry ratio (width/height)
     fontSize = textCalculator(height, string, rectWidth);
   } else {
     //Catch for string less than 13 characters
-    println ("inside catch");
     fontSize = fontSize * 0.08; //Option: build catches for different fonts and characters
   }
   // Might need another catch to make all fonts the same size? How would this algorithm work?

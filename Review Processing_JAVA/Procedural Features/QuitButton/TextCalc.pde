@@ -1,22 +1,11 @@
 PFont titleFont;
 //String[] fontList = PFont.list(); //To list all fonts available on system
 
-String title;
-float titleWidth;
-float titleHeight;
-
-String footer; 
-float footerY;
+String quitButton = "Quit";
 
 void textSetup() {
-  title= "Top45678901234567890122";
   titleFont = createFont ("Harrington", height); // //Must also Tools / Create Font / Find Font / Do Not Press "OK"
-  titleWidth = width*1/2;
-  titleHeight = height*1/10;
-
-  footer = "Bottom";
-  footerY = (height*9/10)-1;
-
+  
   //printArray(fontList); //For listing all possible fonts to choose, then createFont
 }
 
@@ -32,9 +21,8 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   if (string.length() >= 14) { //Number changes depending on geometry ratio (width/height) and font
     fontSize = textCalculator(height, string, rectWidth);
   } else {
-    //Catch for string less than 13 characters
     println ("inside catch");
-    fontSize = fontSize * 0.08; //Option: build catches for different fonts and characters
+    fontSize = fontSize * 0.06; //Option: build catches for different fonts and characters
   }
   // Might need another catch to make all fonts the same size? How would this algorithm work?
 

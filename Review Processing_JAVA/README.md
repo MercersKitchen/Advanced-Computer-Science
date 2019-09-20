@@ -41,11 +41,23 @@ Progression
   - Unique Flowchart for putting text in a rect()
 - Including Text in Pong Procedural Game
   - Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
--
+- See Procedural Features
+  - Creating a Splash Screen with instructions
+    - Start with Text Prototyping / Procedural
+    - Recognize that the Canvas must be "clicked with the mouse first", then the Game Entered
+    - Adding Text to a Screen (will end with multiple fonts; what is the algorithm for the same font)
+  - Creating a Button
+    - Notice TextCalc() doesn't change
+    - 
+    - Quit Button with "hover over" feature
+    - Create the setup()
+    - Create void quitButtonHover() and test hover over effect with mouse pointer and hover over effect
+    -
+
+  -
 
 Future Ideas
-- Creating a Splash Screen with instructions
-- Adding Text to a Screen
+- Need new Case Study
 - Scoreboard
 - Record a goal to the console
 - Random Ball Start
