@@ -46,15 +46,21 @@ Progression
     - Start with Text Prototyping / Procedural
     - Recognize that the Canvas must be "clicked with the mouse first", then the Game Entered
     - Adding Text to a Screen (will end with multiple fonts; what is the algorithm for the same font)
-  - Creating a Button
+  - Creating a Simple Start Button on the KeyBoard, see StartButton.pde
+  - Creating a Button with hover (must case study to know all coordinates of 2D shape of button)
     - Notice TextCalc() doesn't change
-    - 
+    - Add QuitButton TAB
     - Quit Button with "hover over" feature
     - Create the setup()
-    - Create void quitButtonHover() and test hover over effect with mouse pointer and hover over effect
-    -
-
-  -
+    - Create void quitButtonHover() and test hover over effect with mouse pointer and hover over effect with println
+    - Create void quitButtonColorChange() and test color changes with variables
+      - must redraw rect() with fills and redraw word "Quit" (easiest to copy these lines from setup)
+    - Create void mousePressed() using hover parameters
+    - Repeat for other buttons
+- Able to create all buttons
+- Able to put game play into Boolean for Starting Game from Splash Screen
+- Once Game Play is started able to restart it with a button
+- Able to draw score variable to scoreboard
 
 Future Ideas
 - Need new Case Study
