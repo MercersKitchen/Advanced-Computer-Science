@@ -2,7 +2,7 @@
 From Structured to Procedural
 - add all Advanced Placement Vocabulary in summary and Explanations in Details
 
-Completed Project Exemplar - <a href="">
+Completed Project Exemplar - <a href="https://github.com/QEHS-ProcessingJava/Pong-Procedural">
 Pong</a>
 , see Mr. Mercer for Permission
 
