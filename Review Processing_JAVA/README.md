@@ -2,6 +2,10 @@
 From Structured to Procedural
 - add all Advanced Placement Vocabulary in summary and Explanations in Details
 
+Completed Project Exemplar - <a href="">
+Pong</a>
+, see Mr. Mercer for Permission
+
 Concepts and Vocabulary Summary
 - Pong Case Study: GUI & End-user, experienced features, expectations
   - Chart for GUI Ratios and factions of objects in GUI (ball, paddle x 2, scoreboard x 2)
