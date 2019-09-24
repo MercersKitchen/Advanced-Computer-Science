@@ -1,0 +1,8 @@
+
+Draw Geometry of Display
+- repeat all formulae of buttons
+- ID coordinates of buttons (for mouseX and mouseY inequalities)
+- Record these on a Case Study
+
+Then record
+
