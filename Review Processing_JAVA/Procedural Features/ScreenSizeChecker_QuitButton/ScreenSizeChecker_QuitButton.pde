@@ -2,7 +2,8 @@
 
 void setup() {
   //fullScreen();
-  size(400, 800);
+  size(400, 400);
+  screenSizeChecker();
   textSetup();
 
   println("Start of Console");
