@@ -2,7 +2,7 @@
 
 void setup() {
   //fullScreen();
-  size(351, 500);
+  size(700, 500);
   screenSizeChecker();
   textSetup();
 
