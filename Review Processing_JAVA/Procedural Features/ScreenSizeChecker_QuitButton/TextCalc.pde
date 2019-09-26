@@ -17,11 +17,11 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   //Values: LEFT | CENTER | RIGHT & TOP | CENTER | BOTTOM | BASELINE
 
   //Reference to Text Calculator
-  println( string.length() );
+  //println( string.length() );
   if (string.length() >= 14) { //Number changes depending on geometry ratio (width/height) and font
     fontSize = textCalculator(height, string, rectWidth);
   } else {
-    println ("inside catch");
+    //println ("inside catch");
     fontSize = fontSize * 0.06; //Option: build catches for different fonts and characters
   }
   // Might need another catch to make all fonts the same size? How would this algorithm work?

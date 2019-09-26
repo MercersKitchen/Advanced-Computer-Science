@@ -2,7 +2,7 @@
 
 void setup() {
   //fullScreen();
-  size(400, 400);
+  size(351, 500);
   screenSizeChecker();
   textSetup();
 
@@ -15,7 +15,7 @@ void setup() {
 }
 
 void draw() {
-  println(fillQuitButton); //Test the hover over effect for mouseX and mouseY correctness
+  //println(fillQuitButton); //Test the hover over effect for mouseX and mouseY correctness
   quitButtonHover();
   quitButtonColorChange();
 }
