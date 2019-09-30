@@ -12,3 +12,6 @@ void draw() {
   counter += 1;
   println ("Choice#" + counter + ": " + number);
 }
+
+//What does the WHILE Loop make disappear, compared to the UsingRandom.PDE?
+//Answer: zero disappears

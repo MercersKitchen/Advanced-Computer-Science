@@ -9,3 +9,6 @@ void draw() {
   counter += 1;
   println ("Choice#" + counter + ": " + number);
 }
+
+//What do you notice in the console with all these numbers?
+//Answer: all -1, 0, or +1
