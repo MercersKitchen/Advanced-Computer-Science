@@ -1,0 +1,67 @@
+Purpose
+- Create a procedural program
+- turn it into a OOP Program
+- Add an array to make many pieces
+- Realize we have created a fireworks explosion, taking a bigger problem and 
+  taking the simplest case
+
+See: https://web.archive.org/web/20160403181516/http://staticvoidgames.com:80/tutorials/objects/fireworks
+
+Beginning Program
+float gravity = .5;
+float x = 250;
+float y = 250;
+float deltaX = 5;
+float deltaY = -5;
+float radius = 10;
+void setup() {
+  size(500, 500);
+}
+void draw() {
+  background(0);
+  //increase ySpeed by gravity so the ball falls faster over time
+  deltaY += gravity;
+  //increment x and y by their speeds so the ball moves
+  x += deltaX;
+  y += deltaY;
+  //draw the ball
+  fill(255, 0, 0);
+  ellipse(x, y, radius, radius);
+}
+void mousePressed() {
+  x = mouseX;
+  y = mouseY;
+  deltaX = 5;
+  deltaY = -5;
+}
+
+Try this program out
+
+How to make multiple dots appear
+- copy and paste code for each dot
+- create mutliple arrays, called "parallel arrays"
+  also called a bad habit
+- create a class array
+
+Create the class
+
+Adding Random to DeltaX, DeltaY, and radius
+- also add anther radius into the Particle.reset
+
+Adding Mulitple dots, names as arrays without array function
+- use copy and paste
+
+Change into Arrays
+
+Additions
+- make the ball stop at the "floor" using the "Class Introduction" Program
+- make the particles bounce off the walls
+- turn this into a fullScreen () application
+
+Additions II
+- Modify the firework program so each Particle has its own color and/or gravity.
+- Modify the Particle class so that Particles darken as they fall.
+- Move the call to background() around to create different effects. 
+  Remember that the background() function clears out anything previously drawn. 
+  What if you only call it once in the setup() function? 
+  What if you only call it when the mouse is pressed?

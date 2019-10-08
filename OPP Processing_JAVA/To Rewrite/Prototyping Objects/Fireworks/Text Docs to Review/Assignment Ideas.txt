@@ -1,0 +1,9 @@
+Explore the code for bouncing walls
+- Build Flat Program
+- Build Class Program
+- Build Class-Procedural Program
+
+Explore the code for Gravity
+- Build Flat Program
+- Students build Class Program, then demonstration of class program
+- Students extend code of class program into arrays

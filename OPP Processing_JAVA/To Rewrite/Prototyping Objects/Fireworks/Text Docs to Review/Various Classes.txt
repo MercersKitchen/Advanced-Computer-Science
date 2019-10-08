@@ -1,0 +1,49 @@
+Summary
+- Interfaces
+- Abstract Classes
+- Anonymous Classes
+- Final Classes (compared to final methods and varaibles)
+
+
+Think of Interfaces as a contract
+- Lists the methods classes must have
+- Regular classes define those methods
+- Regular classes must override the methods listed
+- Seems like safety
+
+Abstract Class, inbetween interface & class
+An abstract class can define variables and methods exactly like 
+a normal class, but it can also define abstract methods much like 
+an interface. 
+This can be used when you know partly what a set of classes should do, 
+but want to leave some of the functionality completely up to a subclass. 
+For example, both our Circle and Rectangle classes have an x and a y value, 
+but they have completely different draw() functions. 
+We could use an abstract class to organize that, like so:
+
+abstract class Shape{
+  float x;
+  float y;
+
+  Shape(float x, float y){
+   this.x = x;
+   this.y = y; 
+  }
+
+  abstract void draw();
+}
+
+An abstract class looks a lot like a normal class, 
+except for the abstract keyword. Any methods that you want to force 
+subclasses to override are also declared abstract and end in a semicolon, 
+just like in an interface.
+
+Anonymous Classes - when the class is used once
+- Since used only once, does not need all the typing of a regular class
+  This has been an issue in these 2D Shape Examples
+- class does not have a name, security and used only once
+
+Final Classes, Methods, and Varaibles
+- Final Class: restrict the use of a class for optimization or security
+- Final Method: subclass cannot override it
+- Final Varaible: value cannot change

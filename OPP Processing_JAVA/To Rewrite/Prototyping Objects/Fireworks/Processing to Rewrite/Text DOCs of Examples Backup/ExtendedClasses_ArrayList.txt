@@ -1,0 +1,115 @@
+/*
+// One way of calling Classes, but these are all related
+Rectangle rectangle = new Rectangle(10, 10, 80, 10);
+Square square = new Square(40, 30, 20);
+RedSquare redSquare = new RedSquare(10, 75, 20);
+BlueSquare blueSquare = new BlueSquare(70, 75, 20);
+*/
+/*
+Rectangle rectangle = new Rectangle(10, 10, 80, 10);
+ Rectangle square = new Square(40, 30, 20);
+ Rectangle redSquare = new RedSquare(10, 75, 20);
+ Rectangle blueSquare = new BlueSquare(70, 75, 20);
+ */
+
+//Summarized Way
+ ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+ 
+ 
+void setup() {
+  size(100, 100);
+  //square.printMe(); //Works when Square square = new Square () is called, ask Kevin why
+  
+  // When using Array List
+  rectangles.add(new Rectangle(10, 10, 80, 10));
+  rectangles.add(new Square(40, 30, 20));
+  rectangles.add(new RedSquare(10, 75, 20));
+  rectangles.add(new BlueSquare(70, 75, 20));
+}
+
+void draw() {
+  /* //Used for other Class Initialization
+  rectangle.draw();
+  square.draw();
+  redSquare.draw();
+  blueSquare.draw();
+  */
+  
+  //When using ArrayList 
+  for (int i = 0; i < rectangles.size(); i++) { //size is different than length
+    rectangles.get(i).draw(); //changed from 4 lines of code to 1
+  }
+}
+
+//Using keyword variables is confusing to read
+
+class Rectangle {
+
+  float x;
+  float y;
+  float width;
+  float height;
+
+  //Constructor
+  Rectangle(float x, float y, float width, float height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+  } // End of Rectangle Constructor
+
+  //Actaul drawing of Rectangle
+  void draw() {
+    fill(255); //White by Grey Scale
+    rect(x, y, width, height);
+  } // End of Rectangle void draw ()
+}
+
+class Square extends Rectangle {
+
+  //Calls the Constructor of the Square Class (and thus Rectangle)
+  Square(float x, float y, float length) {
+    super(x, y, length, length);
+    // Notice, this super is a rect() and this class-extended lacks a void draw ()
+    /*Java and Processing use the most specific function they can find, 
+     which is why the RedSquare and BlueSquare draw() functions are called for those instances, 
+     even though the variables only know they hold Rectangle values.
+     */
+  }
+
+  //This will print although the values belong to the Rectangle-Class
+  //The Class-Square is a Class-Rectangle
+  void printMe() {
+    println("X: " + x);
+    println("Y: " + y);
+    println("Width: " + width);
+    println("Height: " + height);
+  }
+}
+
+class BlueSquare extends Square {
+
+  //Calls the Constructor of the Square Class (and thus Rectangle)
+  BlueSquare(float x, float y, float length) {
+    super(x, y, length);
+  }
+
+  void draw() {
+    fill(0, 0, 255); //Blue Colour
+    rect(x, y, width, height);
+  } // End of Blue Square void draw ()
+}
+
+class RedSquare extends Square {
+
+  //Calls the Constructor of the Square Class (and thus Rectangle)
+  RedSquare(float x, float y, float length) {
+    super(x, y, length);
+  }
+
+  void draw() {
+    fill(255, 0, 0); // Red Square
+    rect(x, y, width, height);
+  } // End of Blue Square void draw ()
+}
+

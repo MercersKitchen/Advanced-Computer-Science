@@ -1,0 +1,24 @@
+Reminders
+- No one way to conceptualize an OOP Program
+- Meant to organize data
+
+Example Exercises
+Create a program that includes the following:
+1. An abstract class Animal
+   - with a constructor that takes the Animal's name as an argument
+   - and an abstract method move().
+2. An interface Bird with a single method fly().
+3. An interface Fish with a single method swim().
+4. An interface Mammal with a single method walk().
+
+Notice
+- Implementations of each of those interfaces that also extend Animal. 
+  For example:
+  class Cat extends Animal implements Mammal{ Cat(String name){ super(name); }
+  void move(){ walk(); }
+  void walk(){ println(name + " goes pitter patter."); } }
+- Extensions of each of those classes that modify the baseline behavior.
+  For example:
+  class Kitten extends Cat{ Kitten(String name){ super(name); }
+  void walk(){ println(name + " clumsily pounces."); } }
+

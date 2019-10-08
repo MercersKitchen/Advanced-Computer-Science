@@ -1,0 +1,10 @@
+dog	I love dogs.
+cat	cats are so cool.
+leandro	Leandro is cool, he is my creator
+version	I am still at version {version}
+school	school is cool
+bye	{exit}
+code-name	my codename is {codename}
+codename	My codename is {codename}
+weather	The weather is nice out.
+code	Coding is cool.
