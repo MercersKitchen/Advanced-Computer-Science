@@ -15,6 +15,7 @@ Progression: Create a Program with ...
    float diameter;
    color colour;
    ```
+   - See ObjectIs.pde
    - Illustrates minimum code for an Object & Java Compiler
    - See "Object Is", <a href="">Click Here</a>
 
@@ -23,6 +24,7 @@ Progression: Create a Program with ...
    fill(); //gray scale, RGB, or Hexidecimal
    ellipse(); //x-value, y-value, diameter-X-Value, diameter-X-Value
    ```
+   - See ConstructorIs
    - Considerations
      - Create Class-type Variable, as a Global Variable (accessible to everywhere)
      - Create a new File (TAB) for the Object
@@ -30,8 +32,19 @@ Progression: Create a Program with ...
        - NOTE: we have passed parameters for the constructor or we have assigned variables (hard-coded or through mouseClick)
        - Simplest is hard-coding
    - See "Constructor Is", <a href="">Click Here</a>
-   
+
 3.
+
+Future Order
+- ArithemticIs
+- ClassArithmetic
+- Rewrite below to separate constructors with parameters
+- ClassObjects: constructors (do we need parameters here?)
+- ClassParameters: parameters and constructors
+- ClassObjects_Alternate
+
+
+
 ---
 
 # Ideas to Include
