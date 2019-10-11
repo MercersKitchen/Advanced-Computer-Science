@@ -33,7 +33,7 @@ Progression: Create a Program with ...
        - Simplest is hard-coding
    - See "Constructor Is", <a href="">Click Here</a>
 
-3.
+3. TB Finished
 
 Future Order
 - ArithemticIs
@@ -43,6 +43,8 @@ Future Order
 - ClassParameters: parameters and constructors
 - ClassObjects_Alternate
 
+Note:
+- See Reading Code Handout, based on Summary.PDE
 
 
 ---
