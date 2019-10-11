@@ -8,7 +8,6 @@ class Ball {
   float xSpeed;
   float ySpeed;
 
-
   Ball (float x, float y, color myColour) { //Constructor
     this.x = x;
     this.y = y;
@@ -18,16 +17,15 @@ class Ball {
     ySpeed = 1;
   }
 
-
   void step() { //Next Step of Ball
     x += xSpeed;
     y += ySpeed;
 
     //Collision with Canvas Boundaries
-    if ( x - diameter/2 < 0*width || x + diameter/2 > width ) {
+    if ( x-diameter/2 < 0*width || x+diameter/2 > width ) {
       xSpeed *= -1;
     }
-    if ( y - diameter/2 < 0*height || y + diameter/2 > height ) {
+    if ( y-diameter/2 < 0*height || y+diameter/2 > height ) {
       ySpeed *= -1;
     }
   } //End of step()

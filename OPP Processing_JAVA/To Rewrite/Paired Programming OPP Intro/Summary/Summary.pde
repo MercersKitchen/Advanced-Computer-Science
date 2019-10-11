@@ -1,21 +1,22 @@
 //Global Variables
 
-//Creating Classes as Global "Variables"
-Ball myPongBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
-Ball fiveHoleBall = new Ball(60, 150, #FF3503); //Hexidecimal Orange
+//Creating Classes like Global "Variables"
+Ball myBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
+Ball yourBall = new Ball(60, 150, #FF3503); //Hexidecimal, orange
 
 void setup() {
-  size(600, 500); //Use size() while developing, will use fullScreen later
+  size(600, 1500); //Use size() while developing, will use fullScreen later, 
+  screenSizeTester();
 }
 
 void draw() {
   background(0);
   
   //Class-accessed arithmetic
-  myPongBall.step();
-  fiveHoleBall.step();
+  myBall.step();
+  yourBall.step();
   
   //Reviewing Procedure to repeat lines of code
-  drawBall(myPongBall.colour, myPongBall.x, myPongBall.y, myPongBall.diameter);
-  drawBall(fiveHoleBall.colour, fiveHoleBall.x, fiveHoleBall.y, fiveHoleBall.diameter);
+  drawBall(myBall.colour, myBall.x, myBall.y, myBall.diameter);
+  drawBall(yourBall.colour, yourBall.x, yourBall.y, yourBall.diameter);
 } //End of void draw()
