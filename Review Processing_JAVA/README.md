@@ -445,4 +445,11 @@ Code to add
 - might help with ignoring some code and doing other things
 - another idea is to create tabs to section blocks of in a linear way
 
-```
+---
+
+Grading to consider
+- Random Ball Start from 4 courners
+- Faster Ball / Guards
+- Shrinking Paddles
+- Easter Egg of Catching ball in paddle
+- Rally Counter and score based on that
