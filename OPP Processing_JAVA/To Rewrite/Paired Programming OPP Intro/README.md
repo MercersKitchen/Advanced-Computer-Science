@@ -91,6 +91,12 @@ On 11x17,
   - Describe where data is coming from, where it is going, & how it is remaining the same or changing in the single line of code
   - If arithmetic is done in draw(), illustrate what is happening with real numbers during three iterations (write down what these numbers are)
 
+Ideas
+- What does "Ball" do?
+- What is the significance of "myBall"?
+- How is the keyword "new" significant?
+
+
 ---
 
 # Ideas to Include
