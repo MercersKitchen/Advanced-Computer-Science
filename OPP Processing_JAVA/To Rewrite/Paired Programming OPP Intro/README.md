@@ -94,8 +94,9 @@ On 11x17,
 Ideas
 - What does "Ball" do?
 - What is the significance of "myBall"?
+- When a line repeats except for the object name, what is happening in the second line that is different?
 - How is the keyword "new" significant?
-
+- What is the name of the period in some of the class.variable names?
 
 ---
 
