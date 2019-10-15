@@ -1,6 +1,18 @@
 # Object Orientated Programming through Processing-Java
 Learning OOP through the Processing Driver, Pure-Java Constructor, and .pde or Pure-Java Classes
 
+See Paired Programming OPP Introduction, First
+- Assessment: Summary of Driver Program
+- Answer ...
+  - What each lines executes
+  - If line points to subprogram, what is it and describe the concepts below
+  - If line is executable ...
+    - What functions involved
+    - Expand on these functions with associated vocabulary
+    - Data Created and|or manipulated
+    - What is Inputted, Processed, and Outputted per line
+    - What is created on the HEAP? What is anticipated with what is on the HEAP?
+    
 **UNDER CONSTRUCTION**
 
 **Thank-you** to Keven Workman and his effort in putting out this organization, and answering my emails
