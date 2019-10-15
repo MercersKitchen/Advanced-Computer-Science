@@ -5,7 +5,7 @@ Ball myBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
 Ball yourBall = new Ball(60, 150, #FF3503); //Hexidecimal, orange
 
 void setup() {
-  size(600, 1500); //Use size() while developing, will use fullScreen later, 
+  size(2000, 1500); //Use size() while developing, will use fullScreen later, 
   screenSizeTester();
 }
 
