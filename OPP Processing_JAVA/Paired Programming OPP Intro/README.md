@@ -98,6 +98,67 @@ Ideas
 - How is the keyword "new" significant?
 - What is the name of the period in some of the class.variable names?
 
+Below are explanations per line of code from Summary
+```JAVA
+Ball myBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
+```
+- `Ball`: function to create object called myBall
+- `myBall`: Object name that contain
+- `new`: object variables have no values, "new"
+- `Ball()`: pointing to constructor, accessing object variables
+- `Parameters`: populate variables inside constructor
+
+```JAVA
+Ball yourBall = new Ball(60, 150, #FF3503); //Hexidecimal, orange
+```
+- Describe what is new with this line ...
+- An `new` object is made with different parameters populating the constructor's variables
+
+```JAVA
+void setup() {}
+```
+- Part of the JDK ID of main program ( folder name and void draw() )
+- Code Block that sets up the program, only run once
+
+```Java
+size(2000, 1500);
+```
+- creates the Canvas window size to view visual data, focus of how Processing-Java solves problems
+
+```JAVA
+screenSizeTester();
+```
+- Runs a void procedure to compare the geometry of the display with the geometry of the Canvas
+- Returns feedback when width or height does not fit in display, based on comparisons
+- Feedback goes to console and then the program exists, thus information only available to developer
+
+```JAVA
+void draw() {}
+```
+- Part of the JDK ID of main program ( folder name and void setup() )
+- Code Block that repeats 60 times per second, creates illusion of animation, etc. for visual data
+
+```JAVA
+background(0);
+```
+- Function changes canvas background to either grayscale or color, `0` parameter is grayscale black (small memory compared to color black)
+
+```JAVA
+myBall.step();
+yourBall.step();
+```
+- Using delimiter, main program access `myBall` object, then executes the step() procedure
+- Step() does arithmetic on varaibles for parameterrs of drawing ellipse
+- With `yourBall`, step() code repeated but different object's varaibles are changed
+
+```Java
+drawBall(myBall.colour, myBall.x, myBall.y, myBall.diameter);
+drawBall(yourBall.colour, yourBall.x, yourBall.y, yourBall.diameter);
+```
+- `drawBall`: procedure with code that needs repeating for Canvas to draw ellipse
+- procedure accesses specific object's variables for use in repeating lines of code, whenever an ellipse needs to be drawn to the Canvas
+- Two object's sets of variables accessed, `myBall` & `yourBall`
+
 ---
 
 # Ideas to Include
