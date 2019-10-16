@@ -22,9 +22,26 @@ Order of these programs ...
 
 # Summary of Each Program, see above, TBA
 
+Note: to introduce objects, it is best if students suggest what is below
+- Modularity in OOP means a non-linear programming style
+- These reflections start with a case study or a decomposed problem of Fireworks
+- "How do you recreate a firework but in steps?"
+- "What needs to be coded first, etc."
+
+This blends an Object-first approach with end-user case studies.
+
 ## Moving Ball
 
+Start with putting a ball on the screen with ellipse()
+
+Explore a chasing game
+
 ## Many Ball
+
+Start with putting a ball on the screen with ellipse()
+- Explore the parameters needed - these are the variables of the object
+- Explore creating the ball anywhere
+- Add access modifiers, etc. (see specific ReadMe files in various folders)
 
 ## MovingMany_Combination
 
