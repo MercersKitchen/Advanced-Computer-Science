@@ -98,12 +98,12 @@ Ideas
 - How is the keyword "new" significant?
 - What is the name of the period in some of the class.variable names?
 
-Below are explanations per line of code from Summary
+Below are explanations per line of code from Summary.pde
 ```JAVA
 Ball myBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
 ```
 - `Ball`: function to create object called myBall
-- `myBall`: Object name that contain
+- `myBall`: Object name that contain all variables listed in class 
 - `new`: object variables have no values, "new"
 - `Ball()`: pointing to constructor, accessing object variables
 - `Parameters`: populate variables inside constructor
