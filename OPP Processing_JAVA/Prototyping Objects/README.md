@@ -1,6 +1,15 @@
 # Prototyping Object Ideas
 Prototyping Specific to Pong
 
+**Purpose**: learning how to prototype (Pong Ball) in OOP while being creative with what it represents
+- Ways of thinking about an ellipse in code
+  - Firework
+  - Sparkler in a glass
+  - Simple Chase Game
+  
+-
+- "What are you able to code when your imagination experiences all these metaphors for a pong ball?"
+
 **UNDER CONSTRUCTION**
 
 These Programs illustrate
