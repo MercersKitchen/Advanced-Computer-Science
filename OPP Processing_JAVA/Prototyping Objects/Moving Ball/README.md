@@ -38,6 +38,9 @@ Progression of Programs in this Pathway
 
 # Ideas
 
+Tell story of "Chase Me" from time substituting in Kindergarten
+- Purpose: developing imagination for adding ideas into Pong
+
 Do an advanced algorithm based on linear slope formula `M=rise\run`
 - Problem solve the chase algorithm
 - Note: solving this algorithm will help with problem solving future algorithms
