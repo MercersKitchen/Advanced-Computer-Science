@@ -1,0 +1,127 @@
+
+
+Continue at 12- Quick Sort- Implementation.mp4
+
+Notes - Sorting Numbers
+- Bubble
+- Selection
+- Insertion
+- Merge
+- Quick
+- Partitioning
+- Counting
+- Bucket
+
+General Notes
+- Description
+- Time Complexity: best and worst comparisions
+- Example implementations
+
+Discussion Questions: 
+- when iterating, consider WHILE instead of FOR based on worst time complexity
+  i < array.length, will achieve least number of times without knowing iterations
+- Swap Procedure is part of library that applies to all sorts
+  Based on index, then reading values of specific indices
+- Iterations means passing through array or list (conceptual and difficult to imagine)
+  Use table of values to imagine values and how array will change
+
+
+Testing implementations
+- arrays need duplicates within defined number system
+- mutliple placevalues to test variable type
+- two numbers, single number, empty array
+
+Bubble
+- Array, compare, then swap, repeat
+- Largest items "bubbles up" and after each iteration, largest will be in the correct order
+- Time: between linear and quadratic
+- Note: with optimizations, time complexity doesn't change since theortical
+- Optimizations
+  Boolean isSorted set to true at beginning for FOR
+  If a swap is done, isSorted is false
+  if finish FOR with isSorted as true, return to main program
+- Optimization
+  as each item bubbles up, need to itterate not to end of array
+  i < array.length-i
+
+Selection
+- Each iteration finds smallest value, then swap with least position in array
+- Array becomes sorted and unsorted as move to increasing positions of array
+- Time complexity: between quad and quad
+  Bubble will check if sorted after first pass, linear
+  Selection cannot, must read entire array with each increasing array position
+
+Insertion
+- Like playing cards
+  Deal card
+  Put on table
+  Deal another card
+  Put at beginning, in middle between numbers, or at end
+  Repeat
+- Creates sorted and unsorted parts of array
+- Implentation:
+  read first value
+  read second value, compare to one before until new value is greater than sorted position
+  (Comparision is < until false, which is greater than)
+  shift all greater than values to the right creating a space at proper index
+  copy value into that space (as a middle insert)
+- Time complexity: between linear and quadratic (same as bublesort)
+
+Previous ALgorithms are all inefficient according to time complexity
+
+Merge
+- Note: for this algorithm, need additional space, trade off for speed
+- Divide array until sub arrays have single values (single arrays are sorted)
+- "Divide and conquer"
+- Recursively dividing array to smaller and smaller arrays based on dividing index by two
+  Until index is 2 and division is 1 (or zero, which means origional index was 1)
+- Merging two sub arrays
+  Read first value of both arrays
+  Smaller one gets first value of new array
+  From the array that had the smaller value, read the next value and compare to value of 
+    other array
+  Smaller value gets merged arrays' next position
+  Continue until all values read of values of one array
+  When all values of one array are read and merged, since other array is already sorted
+  Add all values of unmerged area to end of merged array
+- Time complexity:
+  Two sub algorithms: dividing and merging
+  Dividing: between log(n) and log(n)
+  Merging: between linear (n) and linear
+  Combination: n log(n)
+  Note: nlog(n) is faster than quad, but at cost of needing more memory
+  Additional space is the same amount of the unsorted array since can merge into origonal 
+    array
+- In Place Merger Sort does not increase space requirements, beyond scope of course
+- Reminders
+  In dividing part, since recursive, must define base case, single array
+
+Quick, with partitioning
+- efficient, does not need extra space like merge sort
+- Select Pivot Item, usually last item (last, first, or random item)
+  Divide all items placed on either side of pivot
+  Pivot will be in the correct position
+  Continue with left half of array
+  Pick pivot, put in correct position
+  Repeat until only single array is left, presume correctly positioned
+  Start over with origonal array largest position (right side array)
+  repeat but do not read over array less than the first pivot place
+  need to premember new pivot number as that is the new end of unsorted array
+
+Partitioning
+- set two variables, readPosition, boundaryLeftArray
+- if pivot smaller than readPosition, move readPosition
+- if pivot great than readPosition-value, move boundaryLeftArray to readPosition-1, then 
+    swap with readPosition
+- Time complexity: two sections, partiioning and #OfLeftArrays
+  Partitioning: between log(n) and n 
+  #OfLeftArrays: between log(n) and n 
+  Combination: between n and quadratic
+
+
+
+
+
+Counting
+Bucket
+
