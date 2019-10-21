@@ -10,12 +10,13 @@ class Ball {
     this.x = x;
     this.y = y;
     this.diameter = diameter;
-    targetX = x; //starting value must match initial instance value
-    targetY = y; //starting value must match initial instance value
+    //targetX; //starting value must match initial instance value
+    //targetY; //starting value must match initial instance value
   } //End of Constructor
 
   void step() {
     Boolean XSmaller = false;
+    println(XSmaller);
     Boolean YSmaller = false;
     float run = x-targetX;
     if (run < 0) {
