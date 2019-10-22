@@ -1,19 +1,18 @@
 class Ball {
-  float x;
-  float y;
-  float diameter;
-  
-  float targetX;
-  float targetY;
+  private float x;
+  private float y;
+  private float diameter;
+
+  private float targetX;
+  private float targetY;
 
   Ball(float xParameter, int yParameter, float diameterParameter) { // Notice float vs. int; casting issue
     this.x = xParameter;
     this.y = yParameter; 
     this.diameter = diameterParameter;
-    
+
     targetX = xParameter;
     targetY = yParameter;
-    
   } // End of Constructor
 
   void step() {
@@ -28,6 +27,26 @@ class Ball {
     } else {
       y--;
     }
-    
   } // End step()
+
+  public float getX() {
+    return x;
+  }
+
+  public float getY() {
+    return y;
+  }
+  
+  public float getDiameter() {
+    return diameter;
+  }
+  
+  public float getTargetX() {
+    return targetX;
+  }
+  
+  public float getTargetY() {
+    return targetY;
+  }
+ 
 } // End of the Ball Class
