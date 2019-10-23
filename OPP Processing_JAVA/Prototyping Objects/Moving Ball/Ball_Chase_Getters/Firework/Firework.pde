@@ -15,8 +15,11 @@ void draw() {
 
 
 void mousePressed() {
-  ball.targetX = mouseX;
-  ball.targetY = mouseY;
+  float mouseX() { //too much issue with security, also variable is public anyway
+    return mouseX;
+  }
+  ball.getTargetX() = mouseX();
+  ball.getTargetY() = mouseY;
 } // End mousePressed()
 
 void keyPressed() {

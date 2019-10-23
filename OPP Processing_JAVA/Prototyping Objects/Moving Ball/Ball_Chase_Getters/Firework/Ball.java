@@ -3,8 +3,8 @@ class Ball {
   private float y;
   private float diameter;
 
-  public float targetX;
-  public float targetY;
+  private float targetX;
+  private float targetY;
 
   Ball(float xParameter, int yParameter, float diameterParameter) { // Notice float vs. int; casting issue
     this.x = xParameter;
@@ -32,4 +32,21 @@ class Ball {
   public float getX() {
     return x;
   }
+
+  public float getY() {
+    return y;
+  }
+  
+  public float getDiameter() {
+    return diameter;
+  }
+  
+  public float getTargetX() {
+    return targetX;
+  }
+  
+  public float getTargetY() {
+    return targetY;
+  }
+ 
 } // End of the Ball Class
