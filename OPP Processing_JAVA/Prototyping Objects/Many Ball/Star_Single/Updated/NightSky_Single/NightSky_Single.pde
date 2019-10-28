@@ -1,5 +1,6 @@
 /* To Do List
 - draw edge detector (radius too close to edge, like bounce)
+- goes in Star.java, connected to createStars
 */
 
 // Global Variables

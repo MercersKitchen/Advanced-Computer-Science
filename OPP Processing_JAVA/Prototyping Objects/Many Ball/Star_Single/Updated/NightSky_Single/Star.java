@@ -3,6 +3,8 @@ class Star {
   private float y;
   private float radius;
   
+  private Boolean edgeDetection = false;
+
   public static int starCount = 1; // Number of starts or Pong Balls that will be drawn
   public static int maxRadius = 20; 
   // can this be a ratio of width with error checking of different geometeries
