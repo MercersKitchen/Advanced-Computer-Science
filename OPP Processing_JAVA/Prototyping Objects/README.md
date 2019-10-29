@@ -6,8 +6,7 @@ Prototyping Specific to Pong
   - Firework
   - Sparkler in a glass
   - Simple Chase Game
-  
--
+
 - "What are you able to code when your imagination experiences all these metaphors for a pong ball?"
 
 **UNDER CONSTRUCTION**
@@ -19,13 +18,13 @@ These Programs illustrate
   - similar to the mouseClick'ed target element of "Bouncing Ball"
 
 Order of these programs ...
-1. Teaching Examples
-- Moving Ball
-- Many Ball
-- MovingMany_Combination
+1. Teaching Examples: Students work on basic program, other algorithms
+- Moving Ball: improved algorithm using updated understanding of slope (m =! 1)
+- Many Ball: edge detection algorithm (simple one outside of class given) & overlap algorithm (based on searching algorithm, to be taught?)
+- MovingMany_Combination: creating black holes in Knight Time Skies or "Running Towards a Point"
 
 2. Student Assignment Example, guided
-- Fireworks
+- Fireworks: example code developed with students
 
 ---
 
