@@ -1,8 +1,6 @@
 # Fireworks Project
 Another way of creating ellipses but using the ellipses, not as Pong Balls, but as a celebration or emphasis
 
-**UNDER CONSTRUCTION**
-
 Purpose of Repo: Create Firework in a Jar
 - Use Class Hierarchy to rewrite Program to create a hierarchy
 - What can students do with Class Hierarchy before lessons
@@ -12,6 +10,13 @@ Review ...
 - Bouncing Ball, review and introduction
 
 **Purpose**: Create the Object or Objects in the class first, then modify and add items (arrays and arrayLists)
+
+Updated Progression
+- BeginningFireworks.pde: more exposure to OOP Programming and developing code
+
+See Fireworks-Delete / ExplodingFireworks
+
+**UNDER CONSTRUCTION**
 
 See ClassDesign, contains the Firework Class
 - Create the Object or Objects in the class first
