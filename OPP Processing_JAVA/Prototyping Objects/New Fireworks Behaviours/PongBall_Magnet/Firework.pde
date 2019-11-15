@@ -6,7 +6,8 @@ class Firework {
   float diameter;
   float xSpeed;
   float ySpeed;
-  float gravity;
+  float xGravity;
+  float yGravity;
 
   //Static Variable for the number of exploding objects
   //Static Varaible for the smallest Diameter
@@ -22,7 +23,9 @@ class Firework {
     this.diameter = random(maxDiameter-minDiameter, maxDiameter);
     this.xSpeed = random (-5, 5);
     this.ySpeed = random (-5, 5);
-    gravity = 0.5;
+    xGravity = 0.5;
+    yGravity = 0.5;
+    
   } // End of Constructor
 
   // Edge Detection
@@ -39,7 +42,8 @@ class Firework {
   void move() {
     x += xSpeed;
     y += ySpeed;
-    ySpeed += gravity;
+    xSpeed += xGravity;
+    ySpeed += yGravity;
   }
   void threeBallXStart() {
     for (int i = 0; i< fireworks.length; i++) {

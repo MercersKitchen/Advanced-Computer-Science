@@ -20,7 +20,6 @@ void draw() {
   // Remeber to include Dark Mode
 
   for (int i = 0; i < fireworks.length; i++) {
-  fireworks[i].threeBallXStart();
   fireworks[i].edgeDetection();
   fireworks[i].move();
   fireworks[i].classDraw();
