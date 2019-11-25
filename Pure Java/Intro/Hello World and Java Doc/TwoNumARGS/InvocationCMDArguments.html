@@ -1,0 +1,233 @@
+
+<!-- saved from url=(0071)http://courses.cms.caltech.edu/cs11/material/java/donnie/java-main.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Java Program Invocation and Command-Line Arguments</title>
+</head>
+
+<body>
+
+<h2>Java Program Invocation and Command-Line Arguments</h2>
+
+<p>
+A Java program is started by specifying the name of a Java class on
+the command-line.  For example, let's say you have a class like this:
+</p>
+
+<pre>    public class MyProgram {
+        ...
+
+        <span style="color:green">// The entry-point for my program.</span>
+        public static void main(String[] args) {
+            ...  <span style="color:green">// My program's code.</span>
+        }
+    }</pre>
+
+<p>
+(This code would be stored in <tt>MyProgram.java</tt>, and compiled by
+running <tt>javac MyProgram.java</tt>.)
+</p>
+
+<p>
+To run this Java code, you would invoke the Java Virtual Machine (JVM)
+with this command:
+</p>
+
+<pre>    java MyProgram</pre>
+
+<p>
+The JVM would then load <tt>MyProgram.class</tt>, and begin executing
+your program with the <tt>main</tt> method.  This is your program's
+<em>entry-point</em>.
+</p>
+
+<p>
+The main method must be declared in a specific way for the JVM to
+recognize it.  It must be declared <tt>public</tt> and <tt>static</tt>,
+and it must take a single <tt>String[]</tt> argument and return no
+value (<tt>void</tt>).  If your class doesn't have a <tt>main</tt>
+method with these exact characteristics, then you will get an error
+when you try to start your Java program:
+</p>
+
+<pre>    java MyProgram
+    <span style="color:red">Exception in thread "main" java.lang.NoSuchMethodError: main</span></pre>
+
+<p>
+If you see this error, make sure to check whether you have correctly
+declared your <tt>main</tt> method.  The example code above declares
+the <tt>main</tt> method properly.
+</p>
+
+<h3>Command-Line Arguments</h3>
+
+<p>
+Frequently, a Java program needs to handle arguments specified on the
+command-line.  For example, you might want to run your program like this:
+</p>
+
+<pre>    java MyProgram 1234 www.caltech.edu "olive festival"</pre>
+
+<p>
+Somehow, your program needs to be able to access these values from
+the command-line.  The way your program can do this is through the
+<tt>String[]</tt> argument passed to your <tt>main</tt> method.  Note
+that the argument is an array of strings.  Each element of the array
+contains one of the values specified on the command-line.
+</p>
+
+<p>
+In the above example, the <tt>args</tt> array will contain the
+following values:
+</p>
+
+<ul>
+  <li><tt>args.length = 3</tt></li>
+  <li><tt>args[0] = "1234"</tt></li>
+  <li><tt>args[1] = "www.caltech.edu"</tt></li>
+  <li><tt>args[2] = "olive festival"</tt></li>
+</ul>
+
+<p>
+Java program arguments are separated by spaces and tabs, except when
+an argument is enclosed by double-quotes.  For the above command-line
+invocation, the first two arguments are <tt>"1234"</tt> and
+<tt>"www.caltech.edu"</tt>, since the Java VM will divide the argument
+list based on whitespace.  The third argument, <tt>"olive festival"</tt>,
+is <em>not</em> broken into two separate arguments, since it is enclosed
+with double-quotes.
+</p>
+
+<p>
+Note that leading and trailing whitespace characters are removed from
+the values stored in the <tt>args</tt> array.  Also, for arguments
+enclosed with double-quotes, note that the double-quotes are removed.
+</p>
+
+<p>
+(If you are used to programming in C or C++, you should also note that
+there is a difference between how arguments are passed to C and C++
+programs, vs. how they are passed to Java programs.  In C and C++,
+<tt>argv[0]</tt> is <em>the name of the program itself</em>, and
+<tt>argv[1]</tt> is the first command-line argument to the program.
+In Java, <tt>args[0]</tt> is the first command-line argument to the
+program, and the name of the program itself is not available.)
+</p>
+
+<h3>Numeric Command-Line Arguments</h3>
+
+If a Java program requires numeric command-line arguments, it must
+explicitly convert the <em>string</em> version of the number into the
+actual numeric value.  With the above example, the first argument is
+"1234", a <tt>String</tt>, and it must be converted into an actual
+integer value.  The classes in the <tt>java.lang</tt> package can be
+used to handle these conversions.
+
+For example, to convert <tt>args[0]</tt> to its integer value, you
+can write this:
+
+<pre>    public static void main(String[] args) {
+        int num = 0;
+
+        ...
+
+        try {
+            <span style="color:green">// Parse the string argument into an integer value.</span>
+            <b>num = Integer.parseInt(args[0]);</b>
+        }
+        catch (NumberFormatException nfe) {
+            <span style="color:green">// The first argument isn't a valid integer.  Print</span>
+            <span style="color:green">// an error message, then exit with an error code.</span>
+            System.out.println("The first argument must be an integer.");
+            System.exit(1);
+        }
+
+        ...  <span style="color:green">// Code that uses the command-line arguments.</span>
+    }
+    </pre>
+
+<p>
+There are several important points about this code:
+</p>
+
+<ul>
+  <li>
+  The most important point is that <em>you must handle invalid
+  inputs!</em>  The number parsing functions will throw a
+  <tt>java.lang.NumberFormatException</tt> when parsing fails.  Your
+  programs should not crash when they receive invalid input.  Instead,
+  catch the exception, print out a helpful message, and then exit your
+  program with a nonzero error code.
+  </li>
+
+  <li>
+    <p>
+    The second important point about this code is that <tt>num</tt> is
+    declared and initialized before the <tt>try</tt>/<tt>catch</tt>
+    block.
+    </p>
+
+    <p>
+    The variable must be <em>declared</em> before the
+    <tt>try</tt>/<tt>catch</tt> block because it will be used after the
+    block completes; if it is declared within the block, it will only
+    be visible within the block.
+    </p>
+
+    <p>
+    The variable must be <em>initialized</em> before the
+    <tt>try</tt>/<tt>catch</tt> block because otherwise, the Java compiler
+    will report an "uninitialized variable" error at compilation.
+    </p>
+  </li>
+</ul>
+
+<p>
+Here is a partial list of the primitive data-types, and functions you
+can use for parsing command-line arguments of those types.  These classes
+are in the <tt>java.lang</tt> package, so they are available without
+needing to specify any <tt>import</tt> statements in your Java programs.
+Also, the parsing functions are static, so you don't need to create any
+new objects to use these functions.
+</p>
+
+<table style="width:100%">
+  <tbody><tr>
+    <td><b>Primitive Data Type</b></td>
+    <td><b>Parsing Function</b></td>
+  </tr>
+
+  <tr>
+    <td><tt>boolean</tt></td>
+    <td><a href="http://java.sun.com/javase/6/docs/api/java/lang/Boolean.html#parseBoolean(java.lang.String)">boolean Boolean.parseBoolean(String)</a></td>
+  </tr>
+
+  <tr>
+    <td><tt>int</tt></td>
+    <td><a href="http://java.sun.com/javase/6/docs/api/java/lang/Integer.html#parseInt(java.lang.String)">int Integer.parseInt(String)</a></td>
+  </tr>
+
+  <tr>
+    <td><tt>long</tt></td>
+    <td><a href="http://java.sun.com/javase/6/docs/api/java/lang/Long.html#parseLong(java.lang.String)">long Long.parseLong(String)</a></td>
+  </tr>
+
+  <tr>
+    <td><tt>float</tt></td>
+    <td><a href="http://java.sun.com/javase/6/docs/api/java/lang/Float.html#parseFloat(java.lang.String)">float Float.parseFloat(String)</a></td>
+  </tr>
+
+  <tr>
+    <td><tt>double</tt></td>
+    <td><a href="http://java.sun.com/javase/6/docs/api/java/lang/Double.html#parseDouble(java.lang.String)">double Double.parseDouble(String)</a></td>
+  </tr>
+</tbody></table>
+
+<hr>
+<font size="-1">
+  Copyright (C) 2008, California Institute of Technology. <br>
+  Last updated February 12, 2008.
+</font>
+
+
+
+</body></html>

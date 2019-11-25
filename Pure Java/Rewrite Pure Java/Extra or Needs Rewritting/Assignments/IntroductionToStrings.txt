@@ -1,0 +1,37 @@
+Introduction to Strings Assignment
+
+Note to student: try to case study and build the standard case first,
+  Then build the more advanced cases
+
+Using args, Scanner Class, or JOptionPane input options your program must
+- Start with an argument being passed and handle 
+  the error that no argument is passed
+- Accept a username and password (either a string or number)
+  to start the program
+  Standard: if not correct, program will not start
+  Almost Excellence: program will trim accidently added spaces
+  Excellence: adds new usernames and passwords
+  Perfect:
+    - Memory Structure allows user to pick the number of stored 
+      usernames and passwords, user can also change this
+    - Index Exceptions are automatically catched and corrected
+      For example: a user could enter 4 usernames, then 8, then 10000
+      Note: decreaseing entries is not necessary here but would be cool
+- Accept 4 names in one string-array, similar to lesson
+  Standard: predetermined names in a string, similar to lesson
+    (can be hard coded)
+  Excellence: any 4 random names, no spaces inbetween
+- Separate single string of names into separate names stored
+  in another data structure (i.e. another array)
+- Order names in alphebetical order
+  Standard: ordered based on first letter only
+  Excellence: ordered based on additional letters
+  Perfection: ordered based on all letters in all names
+- All string entries are automatically trimmed for spaces
+  especially additional passwords
+  Note: use the Adding Two Numbers program to remind yourself of how to 
+  create a procedure within a class that is called whenever it is needed
+
+Program must handle the following errors
+- ArrayIndexOutOfBoundsException: for any part of the code where an array can 
+  possibly go out of bounds

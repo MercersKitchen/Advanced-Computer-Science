@@ -1,0 +1,7 @@
+AP Subset Escapes
+\n is new line
+\t is tab
+\" is inserting "" as a string between "" that declare a String (avoid confusion)
+\\ is single \ for writing paths
+  Use this for Github & Where should the file be located
+

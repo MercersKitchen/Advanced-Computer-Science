@@ -1,0 +1,4 @@
+Parts of the Formula
+Write methods to calcualte teh parts of the formulae into variables
+Write the psuedocode for the Println statements
+Try-Catch formulaes

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.math.BigInteger;// This will allow the use of larger numbers
+import java.util.Random;
+
+    public class PlaceValue {
+          public static void main(String[] args) {
+          int number,a=0;
+          Random rand = new Random();
+          int choose = rand.nextInt(10000);
+          int chosen = choose;
+          int b = 0;
+          Scanner s=new Scanner(System.in);
+          System.out.println("Enter any number, I'll also choose a number: ");
+          number = s.nextInt();
+          if(choose<0)  {
+            choose=choose * -1;
+          }  else if(choose==0)  {
+              choose=1;
+            } while(choose>0)  {
+              choose=choose/10;
+              b++;
+    }
+
+
+
+            if(number<0)  {
+              number=number * -1;
+            }  else if(number==0)  {
+                number=1;
+              } while(number>0)  {
+                number=number/10;
+                a++;
+      }
+
+      System.out.println("Number of Digits in given number is: "+a);
+      System.out.println("The number I chose was: " + chosen + ", which has this many Digits: " + b);
+      //System.out.println(Long.MAX_VALUE); A check on what the largest number I can input is.
+      }
+      }

@@ -1,0 +1,6 @@
+Fundamentals
+- Page 62: Hexadecimal adn Octal Numbers, Paper and Pencil Arithmetic
+
+Fibonacci Sequence
+- When to use it
+- How it is useful

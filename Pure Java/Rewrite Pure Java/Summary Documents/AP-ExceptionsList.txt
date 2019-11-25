@@ -1,0 +1,18 @@
+Use try{} catch () {}
+Also use mulit-catch, if all coding is each catch is the same
+  catch (exception1 | exception2 | etc.) {}
+
+AP Subset Exceptions
+ArithmeticException (Barons P75)
+ArrayIndexOutOfBoundsException (Barons P75, 233, 250)
+ClassCastException (Barons P75, 142, 146, 181, 242)
+IllegalArgumentException (Barons P75)
+IndexOutofBoundsException (Barons P75, 180, 244, 245)
+NullPointerException (Barons P75, 103, 180, 243)
+
+Additional Exceptions
+IllegalStateException (Barons P75, 249)
+NoSuchElementException (Barons P75, 247, 248)
+StringIndexOutOfBoundsException (Barons P180)
+
+Useful Extras: isNAN

@@ -1,0 +1,153 @@
+Reference: https://www.geeksforgeeks.org/array-copy-in-java/
+Accessed: 20190112
+
+// A Java program to demonstrate that simply assigning one array 
+// reference is incorrect. 
+public class Test 
+{ 
+    public static void main(String[] args) 
+    { 
+        int a[] = {1, 8, 3}; 
+  
+        // Create an array b[] of same size as a[] 
+        int b[] = new int[a.length]; 
+  
+        // Doesn't copy elements of a[] to b[], only makes 
+        // b refer to same location 
+        b = a;     
+  
+        // Change to b[] will also reflect in a[] as 'a' and  
+        // 'b' refer to same location. 
+        b[0]++; 
+  
+        System.out.println("Contents of a[] "); 
+        for (int i=0; i<a.length; i++) 
+            System.out.print(a[i] + " "); 
+  
+        System.out.println("\n\nContents of b[] "); 
+        for (int i=0; i<b.length; i++) 
+            System.out.print(b[i] + " "); 
+    } 
+} 
+
+Output
+Contents of a[] 
+2 8 3 
+Contents of b[] 
+2 8 3 
+
+
+
+
+// A Java program to demonstrate copying by one by one, slowest example of all
+// assigning elements of a[] to b[]. 
+public class Test 
+{ 
+	public static void main(String[] args) 
+	{ 
+		int a[] = {1, 8, 3}; 
+
+		// Create an array b[] of same size as a[] 
+		int b[] = new int[a.length]; 
+
+		// Copy elements of a[] to b[] 
+		for (int i=0; i<a.length; i++) 
+			b[i] = a[i]; 
+
+		// Change b[] to verify that b[] is different 
+		// from a[] 
+		b[0]++; 
+
+		System.out.println("Contents of a[] "); 
+		for (int i=0; i<a.length; i++) 
+			System.out.print(a[i] + " "); 
+
+		System.out.println("\n\nContents of b[] "); 
+		for (int i=0; i<b.length; i++) 
+			System.out.print(b[i] + " "); 
+	} 
+} 
+
+Output
+Contents of a[] 
+1 8 3 
+Contents of b[] 
+2 8 3 
+
+
+
+// A Java program to demonstrate array copy using clone(), faster than FOR Loop
+public class Test 
+{ 
+	public static void main(String[] args) 
+	{ 
+		int a[] = {1, 8, 3}; 
+
+		// Copy elements of a[] to b[] 
+		int b[] = a.clone(); 
+
+		// Change b[] to verify that b[] is different 
+		// from a[] 
+		b[0]++; 
+
+		System.out.println("Contents of a[] "); 
+		for (int i=0; i<a.length; i++) 
+			System.out.print(a[i] + " "); 
+
+		System.out.println("\n\nContents of b[] "); 
+		for (int i=0; i<b.length; i++) 
+			System.out.print(b[i] + " "); 
+	} 
+} 
+
+Output
+Contents of a[] 
+1 8 3 
+Contents of b[] 
+2 8 3 
+
+
+
+
+// A Java program to demonstrate array copy using 
+// System.arraycopy() 
+// public static void arraycopy(Object src, int srcPos, Object dest, 
+                                int destPos, int length)
+// Object src: array name for source
+// int srcPos: initial source index starting position
+// Object dest: array name for destination
+// int destPos: starting position of the destination array,
+//              does not need to be zero
+// int length: destination array length declaration
+
+public class Test 
+{ 
+	public static void main(String[] args) 
+	{ 
+		int a[] = {1, 8, 3}; 
+
+		// Create an array b[] of same size as a[] 
+		int b[] = new int[a.length]; 
+
+		// Copy elements of a[] to b[] 
+		System.arraycopy(a, 0, b, 0, 3); 
+
+		// Change b[] to verify that b[] is different 
+		// from a[] 
+		b[0]++; 
+
+		System.out.println("Contents of a[] "); 
+		for (int i=0; i<a.length; i++) 
+			System.out.print(a[i] + " "); 
+
+		System.out.println("\n\nContents of b[] "); 
+		for (int i=0; i<b.length; i++) 
+			System.out.print(b[i] + " "); 
+	} 
+} 
+
+Output
+Contents of a[] 
+1 8 3 
+Contents of b[] 
+2 8 3 

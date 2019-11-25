@@ -1,0 +1,21 @@
+Input - not required
+
+Mercer's Kitchen uses
+- arguments
+- Scanner Class
+- JOptionPane
+
+Catch for Missing Arguments
+
+Scanner Class Required lines
+import java.util.Scanner;
+//Similar to key and conccatination of nameChar + nameString
+Scanner input = new Scanner ( System.in );
+String statement = input.nextLine();
+
+JOptionPane Required Lines
+import javax.swing.JOptionPane;
+String input = JOptionPane.showInputDialog ("Press 1 for Monday \n" +
+                                            "Press 2 for Tuesday");
+//Notice how concatination enables readable code
+//Remember, these are strings not ints

@@ -1,0 +1,3 @@
+AddNum is same as JavaDOC Example
+
+This file does not contain the try-catch 

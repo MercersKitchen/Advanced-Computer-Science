@@ -1,0 +1,158 @@
+Introduction to Arithmetic
+
+Teaching Note: review each program on paper, introduce idea of coding on paper
+- always able to check code on the computer
+
+Note to Student
+- Complete the Programs or Questions
+- Add the Java Theory into the program
+  Will help with making algorithms
+
+Summary
+- Even Odd Program (Question 1)
+- Squares and Random (Question 2)
+- Place Value Program (Question 3)
+
+
+
+
+
+Queston 1 (Even Odd Program)
+
+Write a program using control structure decision making to print 
+whether a number is an even OR an odd number.
+
+Your Program Must
+- Use if-else statements and modulus operator
+- Test inputs will be
+  Positive & Negative Even & Odd Numbers
+  Decimal Values
+  Character only values
+
+Example outputs
+15 is an odd number
+8 is an even number
+
+Java Theory Questions
+- State the maximum number of extended if-statements reasonably possible?
+- Describe how the logic flows of
+  IF
+  IF-ELSE
+  IF-ElseIF-Else
+- Describe the logic of a SWITCH Statement.
+- State the IF statement structure that codes the same as the AND operator.
+
+Getting Ready for this Program
+Example returns of modulus
+int remainder1 = 15 % 2;		// remainder1 is 1
+int remainder2 = 16 % 2;		// remainder2 is 0
+int remainder3 = 17 % 2;		// remainder3 is 1
+int remainder4 = 18 % 2;		// remainder4 is 0
+
+Also, by definition, 0 % (any number) = 0.
+For example, 0 % 3 = 0, 0 % 22 = 0, etc.
+
+Extra-Credit Reading
+The modulus operator is helpful for finding remainders, 
+but it is also the foundation for “public-key cryptography” 
+which allows us to send information such as grade transcripts, 
+online purchases, credit card payments, 
+and bank statements securely through the Internet.
+
+
+
+Question 2 (Squares and Random)
+See: https://www.youtube.com/watch?v=H2bjRHpYhBU
+
+Write a program that uses a FOR and a WHILE loop to print numbers 1 through 10, 
+whole numbers only. With each number, complete two math calculations on it. 
+First, calculate it’s square. 
+Second, calculate a random number between the number and 
+the square, inclusively. 
+Separate these by a TAB.
+
+Example Output using FOR Loop
+Here’s some sample output:
+#	x^2	Random in Range
+1	1	1
+2	4	2
+3	9	5
+4	16	11
+5	25	22
+6	36	32
+7	49	49
+8	64	55
+9	81	56
+10	100	67
+
+Example Output Explanation
+If # = 4, then square = 16, and random is between 4 & 16 (11 given above)
+If # = 7, then square = 49, and random is between 7 and 49 (49 given above)
+
+Your Program Must
+- Output two tables separated by TAB: one with a FOR Loop and the other with
+  a WHILE Loop
+
+Program coding hints
+- Escape \t will TAB each output
+  For example: System.out.println( number + “\t“ + numberSquared);
+- Java.lang.math.random() returns random double values >= 0.0 & < 1
+  Your program must be inclusive, not exclusive at the upper range
+  Thus, use multiplication to get the random value “into the range” 
+    of needed “random” values
+  Hint: try a few multiplication statements to figure this out
+- Thus, must error check the random value and if it in the range of values
+- Remember: casting might not round so rounding needs to be checked for errors
+- FOR Loops evaluate for TRUE at the end of the loop
+  It seems like the evaluation is at the beginning, influences control
+- WHILE Loops evaluate for TRUE at the beginning of the loop,
+  influences control differently
+
+Java Theory Questions
+- How the FOR and WHILE increments differently
+- When control is passed to the line immediately following the loop
+
+Extra-Credit Reading
+See Baron’s Page 66
+- Describe the difference between i++ and ++i in FOR Loops.
+- What are the two different returns of println(++i) and print(i++).
+- Describe how the order of i++ and ++I influence the above outputs.
+
+Coding for joystick controllers uses a WHILE Loop for simplicity.
+For example, a program using only a joystick might use
+While ( 1 = 1 ); // Always TRUE
+This creates constantly looping code that functions as a listener, 
+waiting for the controller to return values from it’s sensors to the motors.
+
+Another example might be
+While ( off = 0 ); 
+// off is controlled by a button on the controller that increments ints
+This would turn off the device and the joystick when the device 
+is in a safe location. It also allows a user to “pound” on the button 
+and the repeated button pressing to be error checked for 
+“Try to be easy on your controller.”
+
+
+
+Question 3 (Place Value)
+
+Write a program to determine the number of digits in a given integer, 
+similar to counting place value or writing the exponent in 10^x.
+
+Your Program Must
+- Use a number with more than 12 place values or a magnitude of 10^12
+- Choose a “large” integer number randomly
+- Output the number of digits in the number
+
+Hint: use a loop and integer division to in this algorithm.
+
+Extending this problem
+- Repeat a number with hexadecimal number (like a hexadecimal color)
+- Repeat a number with binary
+- Use the incrementation function of the FOR Loop to control 
+  what base-10 number the computer counts to 
+- Bonus: create a program that “counts” in base-10 to any base and 
+  print out what that number might be in base-10 symbols
+- Extended Bonus: create a set of strings to represent the 
+  symbols in the base that will represent what the base-10 number 
+  will be rewritten as in your chosen base

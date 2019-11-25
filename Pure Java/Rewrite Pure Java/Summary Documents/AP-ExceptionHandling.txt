@@ -1,0 +1,38 @@
+Two ways to handle exceptions
+1. THROW NEW Exception and pass Feedback to Exception Class
+   More feedback than a line that "breaks"
+2. Try-Catch Statements
+   "Surround" problem lines with some safety
+
+Note:
+- Exceptions throw returns outside the method to a different class, Exceptions
+- Exception Class runs and program quits
+- Similar to Errors stopping the compiler processes
+
+THROW NEW Exception and pass Feedback
+
+Example for ArithmeticException
+throw new ArithmeticException ("Cannot Divide by Zero, Change the divisor");
+
+What happens to the program
+- Once Exception thrown, program does not run finish from that line
+- Not possible to automatically fix the program or have the user fix an
+  input mistake
+- Easiest to code, developer passes a message to themselves
+
+Try-Catch Statements
+- Lines in try will run until a line THROWS an Exception
+  Rest of lines in try will not run
+- TRY does not THROW to the Exception Class, but throws to catch(){}
+- Able to fix problems in catch
+  Use IFs to reassign variables
+  Etc
+- CATCH also meant to output any issues
+- For example: System.out.println( exceptionVariableName );
+- Or: exceptionVariableName.printStackTrace();
+- In the catch, able to stop the program with
+  System.exit(0); //Normal program exit parameter
+  System.exit(1); //Program exit due to exception
+- All lines in catch will run
+- Program will continue after the catch
+
