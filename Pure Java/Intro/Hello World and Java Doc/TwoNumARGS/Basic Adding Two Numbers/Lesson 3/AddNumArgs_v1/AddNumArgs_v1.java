@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class AddNumArgs {
+public class AddNumArgs_v1 {
 
   //Global Variables for ARGS
   static long[] numLong = new long[2];
