@@ -43,10 +43,10 @@ public class AddNumArgs_v1 {
     try {
       input[0] = args[0];
       input[1] = args[1];
-      System.out.println("Congrats ... I am using your ARGS.");
+      System.out.println("\nCongrats ... I am using your ARGS.");
     }
     catch (ArrayIndexOutOfBoundsException e3) {
-      System.out.println("A serious error has occured in the algorithm.");
+      System.out.println("\nA serious error has occured in the algorithm.");
       System.exit(0);
     }
     try {
@@ -67,7 +67,7 @@ public class AddNumArgs_v1 {
       }
     } //Long-Int Try
 
-    AddNumArgs obj = new AddNumArgs();
+    AddNumArgs_v1 obj = new AddNumArgs_v1();
     //
     //Need to check if args[] is empty
     //Need to check if args[2] is empty, this is good
