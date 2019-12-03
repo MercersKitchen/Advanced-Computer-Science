@@ -17,7 +17,7 @@ public class StringFunctions {
     System.out.println(alphebet.toLowerCase());
     //
     System.out.println("\nAlphebet's total characters is " + alphebet.length());
-    System.out.println("Why does the alphebet have some many characters?\n");
+    System.out.println("Why does the alphebet have so many characters?\n");
     //
     System.out.println("\nLet's visualize counting a different string");
     System.out.println(noSpaces);
@@ -28,6 +28,7 @@ public class StringFunctions {
         System.out.print(i);
       }
     }
+
     System.out.println("\n");
     System.out.println("Here are some additional string fucntions to use.");
     //
@@ -40,7 +41,6 @@ public class StringFunctions {
     System.out.println("What is returned when a key is not present: " + noSpaces.indexOf("here")); // key = here
 
     //( key )
-
 
 
   }
