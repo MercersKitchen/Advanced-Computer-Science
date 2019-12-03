@@ -1,10 +1,11 @@
+﻿
 AP Subset Strings
 String.length() returns number of characters
 String.substring( int ) returns the characters after the int counting starts with human numbers
 String.substring( int, int ) returns the inbetween characters,
   inclusive with first int and exclusive with second int,
   similar to java.lang.math.random ( int, int )
-String.indexOf( “[text]” ) returns the index value the text starts at, or -1 if text is not present
+String.indexOf( “[text]” ) returns index value of text starting position, or -1 if absent
 String.toLowerCase() returns string in lower case letters
 String.toUpperCase() returns string in Upper Case letters
 String.equals( key ) where key is a testing String returns Boolean
