@@ -11,7 +11,7 @@
 *@since 2017-11-18
 */
 
-public class IntroStrings {
+public class IntroStringsARGS {
   /**<b>Class Description: Beginning Template</b><br>
   *<p></p>
   *@param
