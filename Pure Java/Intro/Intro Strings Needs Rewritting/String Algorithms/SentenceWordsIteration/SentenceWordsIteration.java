@@ -3,7 +3,7 @@ import java.io.*;
 public class SentenceWordsIteration {
 
   //Global Variables
-  public static String alphabet = "   The quick brown fox jumps over the lazy dog.";
+  public static String alphabet = "does this wsork";
 
   public static void main (String[] args)
   throws StringIndexOutOfBoundsException
