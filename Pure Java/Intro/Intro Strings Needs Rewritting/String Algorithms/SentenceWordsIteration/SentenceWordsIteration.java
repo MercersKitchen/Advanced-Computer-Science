@@ -3,7 +3,7 @@ import java.io.*;
 public class SentenceWordsIteration {
 
   //Global Variables
-  public static String alphabet = "does this wsork";
+  public static String alphabet = "is this a borring loop. yes it it.";
 
   public static void main (String[] args)
   throws StringIndexOutOfBoundsException
@@ -29,7 +29,6 @@ public class SentenceWordsIteration {
       periodPositionI = remainingPhrase.length();
       periodPositionS = remainingPhrase.substring(periodPositionI-1, periodPositionI);
       periodPositionB = true;
-
     }
     if (periodPositionB == false) {System.out.println("System Error 1"); System.exit(0);}
     remainingPhrase = remainingPhrase.substring(0, periodPositionI);

@@ -11,7 +11,7 @@ public class SentenceWordsArrayNoIteration {
     System.out.println(alphabet);
     String remainingPhrase = alphabet.toLowerCase();
     remainingPhrase = remainingPhrase.trim();
-    if (remainingPhrase.length() > 140) {
+    if (remainingPhrase.length() > 140) { //SMS
       System.out.println("\nPlease only type 140 Characters per reponse.\n");
       System.exit(0);
       //Note: 140 characters will have 70 words, with a space or period at the end.
