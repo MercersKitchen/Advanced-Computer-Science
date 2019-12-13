@@ -1,0 +1,4 @@
+
+Dictonary of Key Words user inputs
+- Ensure groups topics (answering what your Chatbot can talk about)
+
