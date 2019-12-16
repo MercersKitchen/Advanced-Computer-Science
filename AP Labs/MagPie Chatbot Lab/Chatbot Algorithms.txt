@@ -1,0 +1,7 @@
+
+Main Programmer
+- send phrase to array
+- redirect array to greeting boolan
+- same as salutations
+- dictionary and topics
+- Repeating phrases
