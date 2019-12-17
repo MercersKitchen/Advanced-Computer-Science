@@ -16,11 +16,17 @@ public class Chatbot {
                     "\nGoodBye. Talk with you soon.";
     //
     int i=0;
+    Boolean endChatbot = false;
     String input;
-    while ( i < response.length ) {
-      input = in.nextLine();
-      response[i] = input;
-      System.out.println(statement[i]);
+    while ( endChatbot == false ) {
+      System.out.println(i);
+      if ( i >= response.length ) {
+        endChatbot = true;
+      } else {
+        input = in.nextLine();
+        response[i] = input;
+        System.out.println(statement[i]);
+      }
       i++;
     } //End While for Chatbot
     System.out.println("\nRemembing our conversation...");
