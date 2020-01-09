@@ -1,6 +1,9 @@
 
 Progressions
 
+Instructive YouTube Videos
+- Computer Science AP - Magpie - Introduction to Magpie Class (https://www.youtube.com/watch?v=MXKCtY9oaU0)
+
 See Student Files
 See Chatbot (Private Repo) / Teacher Guide for Additional Instructions
 "Magpie Lab Teacher Guide_updated_Sept_2014.pdf"
