@@ -1,6 +1,14 @@
 void screenSizeTester() {
+  // Change the feed back to canvas
   
   final String fullSize = "Width=" + displayWidth + "; Height=" + displayHeight; //Another example of String Concatenation, used locally here
+
+  if (width<height) {
+    println ("Please change this to landscape mode and start the game again.\n");
+    //
+  } else {
+    println ("You are in Landscape Mode which is good geometry.\n");
+  } //Landscape vs. portrait mode checker
 
   if (width > displayWidth) { 
     println ("ERROR: Change Pong Table size-width, it is too big."); 
