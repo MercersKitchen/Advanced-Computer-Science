@@ -12,10 +12,10 @@ See Paired Programming OPP Introduction, First
     - Data Created and|or manipulated
     - What is Inputted, Processed, and Outputted per line
     - What is created on the HEAP? What is anticipated with what is on the HEAP?
-    
+
 **UNDER CONSTRUCTION**
 
-**Thank-you** to Keven Workman and his effort in putting out this organization, and answering my emails
+**Thank-you** to Kevin Workman and his effort in putting out this organization, and answering my emails
 - <a href="https://web.archive.org/web/20160403191056/http://staticvoidgames.com/tutorials/basicJava/fromProcessingToJava">Click Here for his Archived Website for Using Processing and Pure Java</a>
 
 Motivation for Learning Processing (Artists and Demonstration of Natural Phenomenon IDE)
