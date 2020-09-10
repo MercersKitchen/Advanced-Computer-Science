@@ -10,13 +10,10 @@ Progressions
 # To Include
 
 Review Processing-Java
-- GUI Design
-  - Chart for fractions:  ball, paddlex2, schorboardx2
-  - x, y, width and height
-  - Use Console to get variables to have numbers (verify the math)
-- Boilerplate and fullScreen()
-- Creating a ball & Moving the Ball (local and global variables, declaring and populating variables, casting based on function expectations)
-- ?
+- How to start a processing program
+- ScreenChecker()
+- Drawing Paddles and Ball
+- Paired Programming, OPP Parts & Switching to OPP from Procedural Programming
 
 You Tube Video for Pure Java: https://www.youtube.com/watch?v=eIrMbAQSU34&feature=youtu.be
 

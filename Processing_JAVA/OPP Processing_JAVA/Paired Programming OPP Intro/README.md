@@ -39,8 +39,8 @@ Future Order
 - ArithemticIs
 - ClassArithmetic
 - Rewrite below to separate constructors with parameters
-- ClassObjects: constructors (do we need parameters here?)
 - ClassParameters: parameters and constructors
+- ClassObjects: constructors (do we need parameters here?)
 - ClassObjects_Alternate
 
 Note:
@@ -103,7 +103,7 @@ Below are explanations per line of code from Summary.pde
 Ball myBall = new Ball(50, 100, #FA03FF); //Hexidecimal, purple
 ```
 - `Ball`: function to create object called myBall
-- `myBall`: Object name that contain all variables listed in class 
+- `myBall`: Object name that contain all variables listed in class
 - `new`: object variables have no values, "new"
 - `Ball()`: pointing to constructor, accessing object variables
 - `Parameters`: populate variables inside constructor
