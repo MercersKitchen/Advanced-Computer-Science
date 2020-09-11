@@ -1,6 +1,5 @@
 # Review Processing-Java
 From Structured to Procedural
-- add all Advanced Placement Vocabulary in summary and Explanations in Details
 
 Completed Project Exemplar - <a href="https://github.com/QEHS-ProcessingJava/Pong-Procedural">
 Pong</a>
@@ -9,23 +8,128 @@ Pong</a>
 Concepts and Vocabulary Summary
 - Pong Case Study: GUI & End-user, experienced features, expectations
   - Chart for GUI Ratios and factions of objects in GUI (ball, paddle x 2, scoreboard x 2)
-  - Object || X | Y | width | height
-- Basic boilerplate for Processing
-  - Review code for fullScreen()
+  - Grouping Features within object
+  - Populating Variables based on display geometry and coordinate plane (X | Y | width | height)
 - Variables: Naming, Camel Casing, Declaration, Population (Defining)
 - Variables related to functions and parameters, with Casting, and using the debugging window
+  - void, returning
 - Using console to view arithmetic and where objects are
-- Gray Scale, RGB Values, Hexadecimal Values, using Tools/Color Selector
+- Using tools like color selector, etc.
 
-Progression
+Progression for Case Study and Procedural Review
 - Pong Case Study: GUI & End-user, experienced features, expectations, <a href="">see below</a>
-  - Chart for GUI Ratios and factions of objects in GUI (ball, paddle x 2, scoreboard x 2)
-  - Object || X | Y | width | height
-- Basic boilerplate for Processing, <a href="">see folder for Processing-Java File</a>
-  - Review code for fullScreen()
-  - Review why Mercer's Kitchen Classroom cannot use fullScreen() for teaching, only side loading
-- Using console to view arithmetic and where objects are- Boilerplate for Pong & Starting Processing-Java
-  - Trivia Notes about Processing-Java, <a href="">see below</a>
+  - See Computer Science Planning, Projects
+- Procedural Features
+  - Reminder: Canvas must be "clicked with the mouse first" for OS, then the Game Entered
+  - Accessing display geometry
+  - Using coordinate plane as ratios or percent of geometry
+  - Questioning geometry as landscape vs. portrait with feedback to console or splash screen
+  - Creating a Splash Screen with instructions
+  - Start Button: playing pong beginning
+  - Quit Button with hover over feature (see https://github.com/QEHS-ProcessingJava/Pong-Procedural/tree/master/Pong)
+  - Text Calculator as a procedural return (introducing Pure Java OPP Mathematical data returns to driver, and data interactions between objects)
+  - Sound files
+  - Image files
+- Advanced Procedural Features
+  - Dark-Light Mode Switch
+  - Reset Game Button
+  - Saving game state by reading and writing .txt files
+  - Creating AI for Single Player Play
+
+Progression for Object Orientated Progressions
+- UNDER CONSTRUCTION (include AP CSA & CSP)
+- See OOP Parts & Summary
+- See Prototyping Objects
+- Incorporate them back into Pong
+
+Possible Ideas to incorporate
+- Random Ball Start
+- Faster Ball, Guards
+- Shrinking Paddle
+- Easter Egg of catching ball
+- Rally Counter influencing score
+- Other features of older pong games
+
+Advanced Features Idea List
+- "Evening out play when score is not close"
+  - Making ball faster
+  - Slowing paddle speed
+
+---
+
+# Pong Case Study
+- Create student activity for this case study
+- include percents or ratio guesses (remember, compiler verifies guess easily)
+
+Mandatory GUI Objects
+- Ball
+- Left and Right Paddles
+- Score Board
+- Space for Buttons
+
+---
+
+# Trivia Notes about Processing-Java
+
+Processing-Java uses the Java Compiler
+
+Requirements
+- Processing-Java file must be within Folder, named the same
+- .pde extension adds a few requirements to the Processing-Java Execution
+
+Other Notes
+- ByteCode automatically created
+- Main Processing-Java Program is the Constructor (in Object Orientated Programming)
+- Java Compiler is run with specific main line "void main string args ()"
+
+---
+
+# To Include
+
+Add all Advanced Placement Vocabulary in summary and Explanations in Details
+
+Use Console to get variables to have numbers (verify the math)
+
+- Creating a ball & Moving the Ball (local and global variables, declaring and populating variables, casting based on function expectations)
+- ?
+
+Bounce Code
+Explain the math and if statement for one bounce,
+Question: create the next 3 bounces
+
+if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
+    speedX = speedX * -1;
+  }
+  if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
+    speedY = speedY * -1;
+  }
+
+Trivial Knowledge: program creates a cross-stich pattern
+
+- Global vs. local variables: declare, populate, multiple operations
+- Linear execution (when does the computer know the displayWidth & displayHeight
+- Casting, "how to know the type of variables needed" (answer, know the function you need for the variable
+
+Laying, get rid of the shadow
+
+---
+
+Code to add
+- create sections and code to add when coding specific ideas
+- might help with ignoring some code and doing other things
+- another idea is to create tabs to section blocks of in a linear way
+
+---
+
+Grading to consider
+- Random Ball Start from 4 courners
+- Faster Ball / Guards
+- Shrinking Paddles
+- Easter Egg of Catching ball in paddle
+- Rally Counter and score based on that
+
+---
+
 - CreateBall.pde, see folder or <a href="">see below for added code</a>
 - BounceBall.pde, see folder or <a href="">see below for added code</a>
 - Create Paddles and move them; & start coding Dark-Light Mode
@@ -45,76 +149,10 @@ Progression
   - Unique Flowchart for putting text in a rect()
 - Including Text in Pong Procedural Game
   - Modular Programming - makes changes easier, based on GUI Objects, groups of code, or repeated code
-- See Procedural Features
-  - Creating a Splash Screen with instructions
-    - Start with Text Prototyping / Procedural
-    - Recognize that the Canvas must be "clicked with the mouse first", then the Game Entered
-    - Adding Text to a Screen (will end with multiple fonts; what is the algorithm for the same font)
-  - Creating a Simple Start Button on the KeyBoard, see StartButton.pde
-  - Creating a Button with hover (must case study to know all coordinates of 2D shape of button)
-    - Notice TextCalc() doesn't change
-    - Add QuitButton TAB
-    - Quit Button with "hover over" feature
-    - Create the setup()
-    - Create void quitButtonHover() and test hover over effect with mouse pointer and hover over effect with println
-    - Create void quitButtonColorChange() and test color changes with variables
-      - must redraw rect() with fills and redraw word "Quit" (easiest to copy these lines from setup)
-    - Create void mousePressed() using hover parameters
-    - Repeat for other buttons
-- Able to create all buttons
-- Able to put game play into Boolean for Starting Game from Splash Screen
-- Once Game Play is started able to restart it with a button
-- Able to draw score variable to scoreboard
-
-Future Ideas
-- Need new Case Study
-- Scoreboard
-- Record a goal to the console
-- Random Ball Start
-- Faster Ball, Guards
-- Shrinking Paddle
-- Easter Egg of catching ball
-- Rally Counter influencing score
-- Other features of older pong games
 
 ---
 
-# Pong Case Study
-
-Mandatory GUI Objects
-- Ball
-- Left and Right Paddles
-- Score Board
-- Space for Buttons
-
-Mandatory Features
-- GUI Button Control
-- Dark-Light Mode Switch
-- Reset Game Button
-- Quit Program Button
-
-Advanced Features Idea List
-- "Evening out play when score is not close"
-  - Making ball faster
-  - Slowing paddle speed
-- Creating AI for Single Player Play
-
----
-
-# Trivia Notes about Processing-Java
-
-Processing-Java uses the Java Compiler
-
-Requirements
-- Processing-Java file must be within Folder, named the same
-- .pde extension adds a few requirements to the Processing-Java Execution
-
-Other Notes
-- ByteCode automatically created
-- Main Processing-Java Program is the Constructor (in Object Orientated Programming)
-- Java Compiler is run with specific main line "void main string args ()"
-
----
+# To Delete Once Programs read like Text
 
 # CreateBall.pde: Creating and Moving the Ball
 
@@ -411,45 +449,3 @@ void keyPressed () {
 - - PaddlesBounceNetGoalConsole.pde, Record a goal to the console, see folder or <a href="">see below for added code</a>
 
 ---
-
-# To Include
-
-  - Use Console to get variables to have numbers (verify the math)
-
-- Creating a ball & Moving the Ball (local and global variables, declaring and populating variables, casting based on function expectations)
-- ?
-
-Bounce Code
-Explain the math and if statement for one bounce,
-Question: create the next 3 bounces
-
-if (  ballMoveX <= 0+ballSize/2 || ballMoveX >= width-ballSize/2 ) {
-    speedX = speedX * -1;
-  }
-  if ( ballMoveY <= 0+ballSize/2 || ballMoveY >= height-ballSize/2 ) {
-    speedY = speedY * -1;
-  }
-
-Trivial Knowledge: program creates a cross-stich pattern
-
-- Global vs. local variables: declare, populate, multiple operations
-- Linear execution (when does the computer know the displayWidth & displayHeight
-- Casting, "how to know the type of variables needed" (answer, know the function you need for the variable
-
-Laying, get rid of the shadow
-
----
-
-Code to add
-- create sections and code to add when coding specific ideas
-- might help with ignoring some code and doing other things
-- another idea is to create tabs to section blocks of in a linear way
-
----
-
-Grading to consider
-- Random Ball Start from 4 courners
-- Faster Ball / Guards
-- Shrinking Paddles
-- Easter Egg of Catching ball in paddle
-- Rally Counter and score based on that
