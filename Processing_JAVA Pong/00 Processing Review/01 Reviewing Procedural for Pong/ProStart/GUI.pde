@@ -1,6 +1,11 @@
-void GUI_Starting () {
-  ellipse (ballStartPositionX, ballStartPositionY, ballSize, ballSize);
+void drawGame () {
+  background(0);
+  ellipse (ballX, ballY, ballSize, ballSize);
   rect(paddleXLeft, paddleYLeft, paddleWidth, paddleHeight);
   rect(paddleXRight, paddleYRight, paddleWidth, paddleHeight);
-  //rect(); //Right Paddle
- }
+}
+
+void GUI_Starting () {
+  drawGame ();
+  
+}

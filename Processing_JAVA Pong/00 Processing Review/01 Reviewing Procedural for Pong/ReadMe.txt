@@ -10,3 +10,5 @@ Review Variables: local, global, declaration, population
 Review Drawing Objects
 - Math to be done in Pure Java
 
+Playing the Game
+
