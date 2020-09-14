@@ -29,7 +29,7 @@ Progression for Case Study and Procedural Review
   - Quit Button with hover over feature (see https://github.com/QEHS-ProcessingJava/Pong-Procedural/tree/master/Pong)
   - Text Calculator as a procedural return (introducing Pure Java OPP Mathematical data returns to driver, and data interactions between objects)
   - Sound files
-  - Image files
+  - Image files (Currently no images loaded but illustrated in a TAB)
 - Advanced Procedural Features
   - Dark-Light Mode Switch
   - Reset Game Button
