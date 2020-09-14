@@ -30,11 +30,13 @@ Progression for Case Study and Procedural Review
   - Text Calculator as a procedural return (introducing Pure Java OPP Mathematical data returns to driver, and data interactions between objects)
   - Sound files
   - Image files (Currently no images loaded but illustrated in a TAB)
-- Advanced Procedural Features
-  - Dark-Light Mode Switch
-  - Reset Game Button
+- Advanced Procedural Features (Not illustrated until Object Oriented Programming Section)
+  - Note: these features require advanced planning, not prototyping
+  - Dark-Light Mode Switch (similar to Quit Button Hover Over Feature)
+  - Reset Game Button (similar to Splash Screen, resetting variables and redrawing start screen)
   - Saving game state by reading and writing .txt files
   - Creating AI for Single Player Play
+  - Moving ball start position and randomly choosing the direction
 
 Progression for Object Orientated Progressions
 - UNDER CONSTRUCTION (include AP CSA & CSP)
