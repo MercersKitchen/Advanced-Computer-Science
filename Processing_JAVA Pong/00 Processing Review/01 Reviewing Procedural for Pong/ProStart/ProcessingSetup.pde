@@ -5,6 +5,18 @@ float ballSize;
 float netWidth; 
 float paddleWidth, paddleHeight, paddleXStartLeft, paddleXStartRight;
 float paddleXLeft, paddleXRight, paddleYLeft, paddleYRight;
+float paddleLeftUp, paddleRightUp, paddleLeftDown, paddleRightDown;
+Boolean paddleMoveLeftUp, paddleMoveLeftDown, paddleMoveRightUp, paddleMoveRightDown;
+
+void screenChecker () { //Landscape vs. portraint mode
+  if (width<height) { //option displayWidth & displayHeight
+    //Change feedback to print to Canvas
+    println ("Please change to landscape mode to play game");
+    exit();
+  } else {
+    println ("Good Geometry, play the game.");
+  }
+} //end screenChecker ()
 
 void ProcessingSetup () {
 
@@ -29,15 +41,22 @@ void ProcessingSetup () {
    ballSpeedX = 1;
    ballSpeedY = 1;
    
+   paddleLeftUp = 1;
+   paddleRightUp = 1;
+   paddleLeftDown = 1;
+   paddleRightDown = 1;
+   
+   paddleMoveLeftUp = false;
+   paddleMoveLeftDown = false;
+   paddleMoveRightUp = false;
+   paddleMoveRightDown = false;
+   
    /*
    netHeight;
    
    paddleStartX;
    paddleStartY;
-   paddleMoveXLeft;
-   paddleMoveXRight;
-   paddleMoveYLeft;
-   paddleMoveYRight;
+   
    paddleUpRight;
    paddleUpLeft;
    paddleDownRight;
@@ -48,13 +67,3 @@ void ProcessingSetup () {
    */
   //
 } //end ProcessingSetup ()
-
-void screenChecker () { //Landscape vs. portraint mode
-  if (width<height) { //option displayWidth & displayHeight
-    //Change feedback to print to Canvas
-    println ("Please change to landscape mode to play game");
-    exit();
-  } else {
-    println ("Good Geometry, play the game.");
-  }
-} //end screenChecker ()
