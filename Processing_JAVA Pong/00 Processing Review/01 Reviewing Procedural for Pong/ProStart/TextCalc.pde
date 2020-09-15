@@ -16,16 +16,19 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   if (string.length() >= 14) { //Number changes depending on geometry ratio (width/height) and font
     fontSize = textCalculator(height, string, rectWidth);
     if (string == startInstructions) {
-      println("using this");
       fontSize = fontSize * 0.8;
+    }
+    if (string == reset) {
+      fontSize = fontSize * 0.4;
     }
   } else {
     //Catch for string less than 14 characters
-    if (string != quitButton) {fontSize = fontSize * 0.04;} //Option: build catches for different fonts and characters
+    if (string != quitButton) {
+      fontSize = fontSize * 0.15;
+    } //Option: build catches for different fonts and characters
     if (string == quitButton) {
       fontSize = fontSize * 0.04;
     }
-    
   }
   // Might need another catch to make all fonts the same size? How would this algorithm work?
 
@@ -41,6 +44,5 @@ float textCalculator(float size, String string, float rectWidth) {
     size = size * 0.99;
     textSize (size);
   }
-  size = 26;
   return size; //Purpose of Calculator
 }

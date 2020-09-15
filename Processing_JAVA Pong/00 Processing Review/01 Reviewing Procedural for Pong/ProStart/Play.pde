@@ -1,3 +1,6 @@
+Boolean regame = false;
+Boolean stop = false;
+
 void ballMove () {
 
   //floor and ceiling bounces
@@ -11,7 +14,8 @@ void ballMove () {
     if (ballY >= paddleYLeft && ballY <= paddleYLeft+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
     } else {
-      noLoop(); //Socreboard Counter
+      player2 += 1;
+      stop = true;
     }
   }
   //Rigth Side
@@ -19,7 +23,8 @@ void ballMove () {
     if (ballY >= paddleYRight && ballY <= paddleYRight+paddleHeight) {
       ballSpeedX = ballSpeedX * -1;
     } else {
-      noLoop(); //Scoreboard Counter
+      player1 += 1;
+      stop = true;
     }
   }
   

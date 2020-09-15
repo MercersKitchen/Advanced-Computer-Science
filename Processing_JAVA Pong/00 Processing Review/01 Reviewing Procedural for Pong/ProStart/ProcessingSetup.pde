@@ -19,7 +19,7 @@ void screenChecker () { //Landscape vs. portraint mode
 } //end screenChecker ()
 
 void ProcessingSetup () {
-
+  //
   ballStartPositionX = width*1/2;
   ballStartPositionY = height*1/2;
   ballX = ballStartPositionX;
@@ -36,34 +36,17 @@ void ProcessingSetup () {
   paddleXRight = paddleXStartRight;
   paddleYLeft = height*1/2-paddleHeight*1/2;
   paddleYRight = paddleYLeft;
-  
-   
-   ballSpeedX = 1;
-   ballSpeedY = 1;
-   
-   paddleLeftUp = 1;
-   paddleRightUp = 1;
-   paddleLeftDown = 1;
-   paddleRightDown = 1;
-   
-   paddleMoveLeftUp = false;
-   paddleMoveLeftDown = false;
-   paddleMoveRightUp = false;
-   paddleMoveRightDown = false;
-   
-   /*
-   netHeight;
-   
-   paddleStartX;
-   paddleStartY;
-   
-   paddleUpRight;
-   paddleUpLeft;
-   paddleDownRight;
-   paddleDownLeft;
-   //
-   scoreLeft;
-   scoreRight;
-   */
   //
+  ballSpeedX = 1;
+  ballSpeedY = 1;
+  // 
+  paddleLeftUp = 1;
+  paddleRightUp = 1;
+  paddleLeftDown = 1;
+  paddleRightDown = 1;
+  // 
+  paddleMoveLeftUp = false;
+  paddleMoveLeftDown = false;
+  paddleMoveRightUp = false;
+  paddleMoveRightDown = false;
 } //end ProcessingSetup ()
