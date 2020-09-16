@@ -8,7 +8,6 @@ void setup() {
 void draw() {
   background(0);
   myBall.step ();
-  fill(myBall.colour);
-  ellipse(myBall.x, myBall.y, myBall.diameter, myBall.diameter);
+  myBall.draw ();
   
 } //Empty void Draw()

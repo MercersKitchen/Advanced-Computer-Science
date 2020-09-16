@@ -8,36 +8,40 @@ Rebuilding Bouncing Balls, Gravity, and Other Concepts
 - Goal: two ellipses functioning like Pong Balls in a box
 
 Progression: Create a Program with ...
-1. An Object "Ball" with the following Variables
-   ```java
-   float x;
-   float y;
-   float diameter;
-   color colour;
-   ```
+- Routines for typing
+  - Driver Program
+  - Class additions (visual data and mathematical data)
+1. An Object "Ball" with style (see code)
    - See ObjectIs.pde
-   - Illustrates minimum code for an Object & Java Compiler
-   - See "Object Is", <a href="">Click Here</a>
+   - Answers what is an object in ProcessingJava: list of variables
 
 2. A Constructor with the following functions to draw an ellipse
-   ```java
-   fill(); //gray scale, RGB, or Hexidecimal
-   ellipse(); //x-value, y-value, diameter-X-Value, diameter-X-Value
-   ```
    - See ConstructorIs
+   - Answers what a constructor is: assigning variables
    - Considerations
      - Create Class-type Variable, as a Global Variable (accessible to everywhere)
      - Create a new File (TAB) for the Object
      - Assign values to the variables within the program
        - NOTE: we have passed parameters for the constructor or we have assigned variables (hard-coded or through mouseClick)
        - Simplest is hard-coding
-   - See "Constructor Is", <a href="">Click Here</a>
 
-3. TB Finished
+3. Illustrating Arithmetic in a Driver Program
+   - See ArithmeticIs
+   - Note: object does not know about itself yet
+
+4. Illustrating object knowing about itself
+   - See ClassArithmetic
+   - change the sandbox to move the arithmetic to the class and call it in the driver
+   - the object knows about itself
+
+5. Illustrating more than one object, computer tracking specific variables of this
+   - Notice starting position is passes as parameter
+   - See ClassObject
+
+6. Illustrate using monitor geometry in passing parameters
 
 Future Order
-- ArithemticIs
-- ClassArithmetic
+-
 - Rewrite below to separate constructors with parameters
 - ClassParameters: parameters and constructors
 - ClassObjects: constructors (do we need parameters here?)

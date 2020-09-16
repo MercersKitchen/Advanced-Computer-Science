@@ -12,14 +12,18 @@ class Ball {
     x += xSpeed;
     y += ySpeed;
 
-    //Collision with Canvas Boundaries
+    //Collision with Canvas Boundaries, fix for radius of ball
     if (x+xSpeed < 0 || x+xSpeed > width) { 
       xSpeed *= -1; //Alternating Geomteric Sequence
     }
     if (y+ySpeed < 0 || y+ySpeed > height) {
       ySpeed *= -1; //Alternating Geomteric Sequence
     }
-    
   } //End of step
-  
+  //
+  void draw () {
+    fill(colour);
+    ellipse(x, y, diameter, diameter);
+  } //End of draw()
+  //
 } //End of Class Ball

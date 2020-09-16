@@ -1,9 +1,8 @@
 # Review Processing-Java
 From Structured to Procedural
 
-Completed Project Exemplar - <a href="https://github.com/QEHS-ProcessingJava/Pong-Procedural">
+Completed Project Exemplar - <a href="https://github.com/MercersKitchen/Advanced-Computer-Science/tree/master/Processing_JAVA%20Pong/00%20Processing%20Review/01%20Reviewing%20Procedural%20for%20Pong/ProStart">
 Pong</a>
-, see Mr. Mercer for Permission
 
 Concepts and Vocabulary Summary
 - Pong Case Study: GUI & End-user, experienced features, expectations

@@ -29,4 +29,10 @@ class Ball {
       ySpeed *= -1; //Alternating Geomteric Sequence
     }
   } //End of step
+  //
+  void draw () {
+    fill(colour);
+    ellipse(x, y, diameter, diameter);
+  } // End of draw()
+  //
 } //End of Class Ball

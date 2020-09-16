@@ -14,10 +14,7 @@ void draw() {
   myBall.step();
   yourBall.step();
   
-  fill(myBall.colour);
-  fill(yourBall.colour);
-  
-  ellipse(myBall.x, myBall.y, myBall.diameter, myBall.diameter);  
-  ellipse(yourBall.x, yourBall.y, yourBall.diameter, yourBall.diameter);
+  myBall.draw();
+  yourBall.draw();
   
 } //Empty void Draw()
