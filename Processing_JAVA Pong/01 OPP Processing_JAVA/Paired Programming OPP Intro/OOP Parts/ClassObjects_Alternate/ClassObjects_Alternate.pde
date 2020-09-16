@@ -1,11 +1,19 @@
 // Creating a Class Variable
 Ball myBall;
 Ball yourBall;
+float ballStartX, ballStartY;
 
 void setup() {
   size (500, 600);
-  myBall = new Ball(50, 100, color(0, 255, 0)); //Change X & Y to ratios
-  yourBall = new Ball(50, 75, color(0, 255, 0)); //of width and height
+  ballStartX = width*1/2;
+  ballStartY = height*1/2;
+  println (ballStartX);
+  //
+  // Using Ratios and Variables
+  myBall = new Ball(ballStartX, ballStartY, color(0, 255, 0)); //Change X & Y to ratios
+  //
+  // Passsing Numbers, not best practice
+  yourBall = new Ball(200, 200, color(0, 255, 0)); //of width and height
 }
 
 void draw() {
@@ -15,6 +23,6 @@ void draw() {
   yourBall.step();
   
   myBall.draw();
-  yourBall.draw();
+  //yourBall.draw();
   
 } //Empty void Draw()

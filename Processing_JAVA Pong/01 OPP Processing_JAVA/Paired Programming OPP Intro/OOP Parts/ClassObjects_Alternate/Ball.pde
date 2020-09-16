@@ -9,6 +9,7 @@ class Ball {
 
   Ball (float x, float y, color myColour) { //Constructor
     this.x = x;
+    println("Inside Class, x", x);
     this.y = y;
     diameter = 20;
     colour = myColour;

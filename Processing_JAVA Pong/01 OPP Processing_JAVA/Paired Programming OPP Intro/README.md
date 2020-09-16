@@ -30,33 +30,29 @@ Progression: Create a Program with ...
    - Note: object does not know about itself yet
 
 4. Illustrating object knowing about itself
-   - See ClassArithmetic
+   - See ArithemticInObject
    - change the sandbox to move the arithmetic to the class and call it in the driver
    - the object knows about itself
 
+   - then See ArithemticInClassObject
+
 5. Illustrating more than one object, computer tracking specific variables of this
    - Notice starting position is passes as parameter
-   - See ClassObject
+   - See ArithemticInClassObjectMultiple
 
 6. Illustrate using monitor geometry in passing parameters
 
-Future Order
--
-- Rewrite below to separate constructors with parameters
-- ClassParameters: parameters and constructors
-- ClassObjects: constructors (do we need parameters here?)
-- ClassObjects_Alternate
+Note about object design (Class Design)
+- Variables
+- Constructor and Passing Parameters
+- Behaviors or procedures, parameters can be passed here too
+  - Remember, in visual data any arithmetic is done first, then drawing
 
-Note:
-- See Summary.PDE
-- Note: able to add code from "Pong Review"
-- Add a screenSizeChecker()
-  - create a screen size checker that takes the canvas size and compares it to the fullScreen()
-  - If the canvas does not fit in the fullScreen, provide feedback to the console so programmer knows
-  - Test minimum sizes and create catches that tell user to run on program with larger screen geometries
-  - Test if geometry is in landscape.
-    - If in portrait, print to screen to turn device or use different canvas size settings in landscape mode, then retest device settings with a button
-    - If in landscape, confirm if game is playable with button (only pressed once at the beginning of each time program run)
+Note about Driver Design
+- Basic Driver for visual data (program pathway and file name, setup(), draw(), keyPressed(), mousePressed(), etc.)
+- Declaring Objects and Global Variables
+- Canvas Geometry, Landscape & Portrait Mode, will Canvas fit on display (displayWidth & displayHeight)
+- Constructor and Parameters
 
 Example Code
 ```JAVA
