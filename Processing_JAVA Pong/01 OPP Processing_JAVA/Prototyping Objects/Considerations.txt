@@ -3,4 +3,4 @@ Metaphors to help with pong programming
 - Chase with Slope Mathematics (1:1, constant slope)
 - Night Stars with Midpoints or areas (off edge detection, overlapping detection)
 - Black holes (combination of above)
-
+- Fireworks
