@@ -1,0 +1,13 @@
+
+If a star is close enough, including the radii, to it's neighbour, including it's radius
+Then these will overlap
+
+Overlapping is a 2-D problem: circle area overlaps with other circle area
+- inequalities problem of circle equation
+
+Overlapping is a 1-D Problem
+- line bwteeen two star centers
+- find midpoint
+- if radii of either circle is greater than midpoint, then overlapp
+- change "greater than radius" to midpoint length so at least tangent
+

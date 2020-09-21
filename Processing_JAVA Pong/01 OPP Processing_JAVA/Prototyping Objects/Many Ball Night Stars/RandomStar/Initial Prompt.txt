@@ -1,0 +1,3 @@
+
+Choose coordinates
+Inflate point with 2-perpendicular diameters
