@@ -3,6 +3,8 @@ Abstract Classes and Extending Classes
 
 **UNDER CONSTRUCTION**
 
+Build simple Class hierarchy, apply to Pong Pseudo-code afterwards
+
 
 ---
 

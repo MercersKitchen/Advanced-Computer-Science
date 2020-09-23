@@ -153,6 +153,15 @@ Grading to consider
 
 ---
 
+## After Prototyping Objects
+- Pong pseudo-code
+- Complete small class design examples, then apply to Pong pseudo-code
+- Review O_Pong_Exemplars
+
+Class Design Hierarchy Examples Order: see ReadMe there
+
+---
+
 # To Delete Once Programs read like Text
 
 # CreateBall.pde: Creating and Moving the Ball

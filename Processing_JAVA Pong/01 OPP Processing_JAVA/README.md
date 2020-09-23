@@ -47,7 +47,7 @@ Here, we are drawing Pong Balls in different ways, and making them move in diffe
    - Purpose: what you do not understand, but believe you do, will be illustrated clearly ... then you will have questions to ask
 4. Two x Work Periods: complete 3 (Potential Project) or return to the Object-based Pong Game
 5. Paired Partner Programming Assignment, Project (Review of all of OPP to Date)
-   - See <a href="https://github.com/QEHS-ProcessingJava/Ideas-for-OPP">For Teacher Only Files while writting this</a>
+   - See <a href="https://github.com/QEHS-ProcessingJava/Ideas-for-OPP">For Teacher Only Files while writing this</a>
 6. Full Fireworks Project, <a href="https://github.com/MercersKitchen/CS30/tree/master/Objective%20Processing-Java/Prototyping%20Objects/Fireworks">Click Here</a>
    -
 7.
