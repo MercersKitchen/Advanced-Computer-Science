@@ -53,6 +53,17 @@ Progression
    - One access modifier, not a line of code
    - Breaks the hierarchy because final ends the expending of abstract design
 
-Rewrite Pong to include access modifiers and class hierarchy
+6. See https://github.com/QEHS-ProcessingJava/Pong-Abstract-Version for Getters Example
+   - How are Setters used (set the variable outside the class, for it to be used inside the class
+
+Work Periods for Pong
+- Rewrite Pong to include access modifiers and class hierarchy
+- Classes, Extending
+- Abstract
+- Anonymous
+- Final
+- Public, Private
+- Getter Method (encapsulation)
+- Setter Method (outside to inside Class)
 
 ---
