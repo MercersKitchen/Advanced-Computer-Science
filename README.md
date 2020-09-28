@@ -9,6 +9,9 @@ Progressions
     - Processing-Java Visual Data
     - Pure Java Mathematical Data
 
+Algorithms for Searching and Sorting
+- See https://github.com/MercersKitchen/Algorithms
+
 Pure Java interacting with Windows-CMD (introducing Pure Java and more root tools)
 
 ---
