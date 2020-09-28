@@ -1,13 +1,14 @@
 private ArrayList<Shape> shapes = new ArrayList<Shape>();
 Circle cHex;
 
+//Anonymous Class, one time object
 Shape triangle = new Shape (0, 0) {
   void draw() {
     fill (random(255), random(255), random(255));
     triangle (x, y, x-50, y+50, x+50, y+50);
   }
 }
-;
+; //Necessary Code
 
 public void setup() {
   size (500, 500);
