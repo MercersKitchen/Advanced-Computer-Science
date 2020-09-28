@@ -58,7 +58,7 @@ Progression
 
 Work Periods for Pong
 - Rewrite Pong to include access modifiers and class hierarchy
-- Class Modifiers: Class ... Extending, Abstract, Anonymous, Final
+- Class Modifiers: Class, Extending, Abstract, Anonymous, Final
 - Variable modifiers: public, private, static, final
 - Getter Method (encapsulation)
 - Setter Method (outside to inside variable population)
