@@ -49,6 +49,10 @@ Progression
    - anonymous class (one time creation, more of a shortcut)
      - see Abstract_AnonymousEtAll.pde and recognize that the one time class can change (like a scoreboard in Pong) but is only a one-time-creation
 
+5. Final Class
+   - One access modifier, not a line of code
+   - Breaks the hierarchy because final ends the expending of abstract design
+
 Rewrite Pong to include access modifiers and class hierarchy
 
 ---
