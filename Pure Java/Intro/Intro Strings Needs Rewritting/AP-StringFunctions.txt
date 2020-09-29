@@ -1,7 +1,7 @@
 ﻿
 AP Subset Strings
 String.length() returns number of characters
-String.substring( int ) returns the characters after the int counting starts with human numbers
+String.substring( int ) returns the characters after the int counting starts with human numbers (or on with comptuer numbers)
 String.substring( int, int ) returns the inbetween characters,
   inclusive with first int and exclusive with second int,
   similar to java.lang.math.random ( int, int )
